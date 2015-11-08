@@ -1,4 +1,4 @@
-puts "What would you like to do? ('add', 'subtract', 'multiply', 'divide', 'modular_divide')"
+puts "What would you like to do? ('add', 'subtract', 'multiply', 'divide', 'modular_division')"
 operation = gets.chomp
 
 puts "Enter the first number:"
@@ -23,7 +23,7 @@ def divide(a,b)
 	a / b
 end
 
-def modular_divide(a,b)
+def modular_division(a,b)
 	a % b
 end
 
