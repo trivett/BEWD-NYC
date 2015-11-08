@@ -1,1 +1,0 @@
-puts "enter a number"
