@@ -7,7 +7,7 @@ end
 
 if mod(num1) == 0
 	puts "The number is even."
-elsif mod(num1) == 1
+else
 	puts "The number is odd."
 end
 
