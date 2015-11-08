@@ -35,7 +35,7 @@ elsif operation == "multiply"
 	puts "The answer is #{multiply(num1, num2)}."
 elsif operation == "divide"
 	puts "The answer is #{divide(num1, num2)}."
-elsif operation == "modular_divide"
+elsif operation == "modular_division"
 	puts "The answer is #{divide(num1, num2)}."
 else
 	puts "That is not a valid input! Try again."
