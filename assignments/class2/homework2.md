@@ -13,8 +13,8 @@
 
 
 ##3. Calculator
-* In class, we made a boring calculator that only adds. 
-* start with user input that should work as so: 
+* In class, we made a boring calculator that only adds.
+* start with user input that should work as so:
 ````
 What would you like to do? ('add', 'subtract', 'multiply', 'divide')
 add
@@ -27,4 +27,3 @@ The answer is 4.
 * Create five methods in this file for add, subtract, multiply, divide and
   moduluar division.
 * What if the user types an invalid input like "schmooosh?"
-
