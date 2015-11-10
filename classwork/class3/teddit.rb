@@ -1,38 +1,22 @@
-# Let's make an array of hashes to represent news stories in Teddit.
+# I'm sure we have all noticed that on sites like Reddit and Twitter, anything involving a cat seems to get a lot of attention.
+# This program will prompt the user for a headline, scan the headline for the word "cat" and the user will and automatically assign fake upvotes to the story if there is the mention of a cat.
 
 
-
-# #first, literally write three hashes of stories into a news array. Each story
-# hash should have headline, category, and upvotes. If you want some
-# inspiration, go for The Onion or something. 
-
+# first, lets declare a method that will scan the story for the word cat or bacon. Let's name it calculate_upvotes
+# it's return value should be the number of upvotes, which should default to one
+# let's check the ruby docs for a method that checks whether a substring (part of a string) is included in a string.
 
 
-#create a hash that saves each of these values
+# now let's prompt the user to put in a news headline
+
+# Save the user input as the variable story
+
+# set a variable upvotes that will save the value of the output of calculate_upvotes
+
+# print the story and it's appropriate upvotes.
 
 
+# ---------------------------------
 
-# # prompt the user to enter a new story headline, then a category, and then
-# number of upvotes.
-
-
-# make a method that accepts a story as a parameter.
-# The method should print each story with the following format: 
-# Headline: Obama Invites Pizza Rat to White House
-# Category: Politics
-# Upvotes: 90
-
-# print_story(news_story)
-
-
-
-#
-# Call the method on the variable that saves the user-submitted story
-
-# ================== step two ================
-# Push the hash of the user-created story into the array you defined earlier. You
-# can use either the .push method or that awesome shovel << method to do it.
-
-# let's iterate over the array of hashes and pass each (hint hint) one into the
-# method that prints them out all pretty.
+# what about if a headline has cat AND bacon? 
 
