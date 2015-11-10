@@ -1,20 +1,38 @@
-# I'm sure we have all noticed that on sites like Reddit and Twitter, anything involving a cat seems to get a lot of attention.
-# This program will prompt the user for a headline, scan the headline for the word "cat" and the user will and automatically assign fake upvotes to the story if there is the mention of a cat.
-
-
-# prompt the user to enter a headline
-
-
-# save the headline as a variable and "gets.chomp" the headline from the user
-
-# set an upvotes variable. Where should the number of upvotes start? 
+# Let's make an array of hashes to represent news stories in Teddit.
 
 
 
+# #first, literally write three hashes of stories into a news array. Each story
+# hash should have headline, category, and upvotes. If you want some
+# inspiration, go for The Onion or something. 
 
 
-# define a method that scans for the word cat, and pass in the headline that the user gave you, and the upvotes variable.
 
-# call the method so something happens!
+#create a hash that saves each of these values
 
-# print to the screen the story and number of upvotes. 
+
+
+# # prompt the user to enter a new story headline, then a category, and then
+# number of upvotes.
+
+
+# make a method that accepts a story as a parameter.
+# The method should print each story with the following format: 
+# Headline: Obama Invites Pizza Rat to White House
+# Category: Politics
+# Upvotes: 90
+
+# print_story(news_story)
+
+
+
+#
+# Call the method on the variable that saves the user-submitted story
+
+# ================== step two ================
+# Push the hash of the user-created story into the array you defined earlier. You
+# can use either the .push method or that awesome shovel << method to do it.
+
+# let's iterate over the array of hashes and pass each (hint hint) one into the
+# method that prints them out all pretty.
+
