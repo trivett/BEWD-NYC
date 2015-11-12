@@ -1,5 +1,6 @@
-chains = ["mcdonalds","buger king","taco bell","subway","sonic"]
-puts chains[1]
-puts chains[4]
-puts chains.reverse[3]
-puts chains.pop
+user = {
+	"name" => "Judith",
+	"age" => 27,
+	"home" => "Brooklyn",
+	"email" => "thesneakymister@gmail.com"
+}
