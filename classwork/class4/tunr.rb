@@ -57,11 +57,11 @@ def lets_go
 
     if type_of_search == 'p'
       puts "enter your favorite band"
-      term = gets.chomp
+      term = gets.chomp.gsub(' ', '+')
       play_random_song_from_band(term)
     elsif type_of_search == 't'
       puts "enter your favorite band"
-      term = gets.chomp
+      term = gets.chomp.gsub(' ', '+')
       list_songs_by_band(term)
     end
 
