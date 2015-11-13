@@ -5,3 +5,7 @@ musicians = [
     "Oneohtrix Point Never",
     "Nikki Minaj"
 ]
+
+musicians.each do |m|
+    puts m.reverse
+end
