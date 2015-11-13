@@ -1,3 +1,5 @@
 musicians = ["Beyonce", "Josh Groban", "Britney Spears", "Arcade Fire", "Bruno Mars"]
 
-puts musicians
+musicians.each do |musician|
+	puts musician.upcase
+end
