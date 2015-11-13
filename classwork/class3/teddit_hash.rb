@@ -1,19 +1,4 @@
 # Let's make an array of hashes to represent news stories in Teddit.
-<<<<<<< HEAD
-story1 = {"headline" => "Obama Invites Pizza Rat to White House", 
-	"category" => "Politics",
-	"upvotes" => 90
-}
-
-story2 = {"headline" => "Dalai Lama Photographed",
-	"category" => "Religion",
-	"upvotes" => 66
-}
-
-story3 = {"headline" => "Billy Corgon Visits Banksy's 'Dismaland'",
-	"category" => "Entertainment",
-	"upvotes" => 2
-=======
 story1 = {
   "headline" => "Obama Invites Pizza Rat to White House",
   "category" => "Politics",
@@ -30,7 +15,6 @@ story3 = {
   "headline" => "Billy Corgan Visits Banksy’s ‘Dismaland’, Has Bad Time",
   "category" => "Entertainment",
   "upvotes" => 2
->>>>>>> c67d743afc8eaca4a7b4c1269afe387dcb5ccdee
 }
 
 # #first, literally write three hashes of stories into a news array. Each story
@@ -42,19 +26,6 @@ story3 = {
 
 user_story = {}
 
-<<<<<<< HEAD
-puts "Headline?"
-user_story["headline"] = gets.chomp
-
-puts "Category?"
-user_story["category"] = gets.chomp
-
-puts "Upvotes?"
-user_story["upvotes"] = gets.chomp.to_i
-
-# print user_story
-# puts ''
-=======
 puts "headline please"
 user_story["headline"] = gets.chomp
 
@@ -74,7 +45,6 @@ def print_story(story)
 end
 
 
->>>>>>> c67d743afc8eaca4a7b4c1269afe387dcb5ccdee
 
 # make a method that accepts a story as a parameter.
 # The method should print each story with the following format: 
@@ -83,16 +53,6 @@ end
 # Upvotes: 90
 
 
-<<<<<<< HEAD
-def print_story(story)
-	puts "Headline: #{ story["headline"] }"
-	puts "Category: #{ story["category"] }"
-	puts "Upvotes: #{ story["upvotes"] }"		
-	puts "==================================="
-end
-
-print_story(user_story)
-=======
 
 todays_news = []
 
@@ -106,7 +66,6 @@ todays_news.each do |story|
 end
 
 
->>>>>>> c67d743afc8eaca4a7b4c1269afe387dcb5ccdee
 
 
 
@@ -121,22 +80,6 @@ end
 # method that prints them out all pretty.
 
 
-<<<<<<< HEAD
-todays_news = []
-todays_news << story1
-todays_news << story2
-todays_news << story3
-todays_news << user_story
-
-todays_news.each do |story|
-	print_story(story)
-end
-
-# 0.upto(3) do |num|
-# 	print_story(todays_news[num])
-# end
-=======
->>>>>>> c67d743afc8eaca4a7b4c1269afe387dcb5ccdee
 
 
 
