@@ -62,8 +62,9 @@ end
 def play_random_song_from_band(term)
     response = search_itunes(term)
     results = response["results"]
-    pick = # Fill in this blank with the code that will grab a random member of the results array. Look at the Ruby Docs to find it.
-        system("open", pick["previewUrl"]) 
+    pick = results.sample
+   
+    system("open", pick["previewUrl"]) 
 end
 
 
