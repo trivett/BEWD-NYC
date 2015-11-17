@@ -21,10 +21,12 @@ require 'json'
 
 
 def search_itunes(term)
-  base = "https://itunes.apple.com/search?term="
-  url =  base + term
-  h = HTTParty.get(url) 
-  #
+    base = "https://itunes.apple.com/search?term="
+    url =  base + term
+    h = HTTParty.get(url) 
+    j = JSON.parse(h)
+    
+    j
 end
 
 
@@ -36,10 +38,10 @@ end
 # fill in the blanks for  list_songs_by_band that loops over the results of your request by calling search_itunes. this method then prints out all of the track names for the query along with 
 
 def list_songs_by_band(term)
-  response = search_itunes(term)
-  results = response["results"]
+    response = search_itunes(term)
+    results = response["results"]
 
-  #loop over results here and print out each song title
+    #loop over results here and print out each song title
 end
 
 
@@ -54,34 +56,34 @@ end
 
 
 def play_random_song_from_band(term)
-  response = search_itunes(term)
-  results = response["results"]
-  pick = # Fill in this blank with the code that will grab a random member of the results array. Look at the Ruby Docs to find it.
-  system("open", pick["previewUrl"]) 
+    response = search_itunes(term)
+    results = response["results"]
+    pick = # Fill in this blank with the code that will grab a random member of the results array. Look at the Ruby Docs to find it.
+        system("open", pick["previewUrl"]) 
 end
 
 
 ## this method will run the whole application: 
 def lets_go
-  puts "Welcome to Tunr!"
-  play = 'Y'
-  while play == 'Y'
-    puts "What type of search will you do? (P = 'play random song by band', T = 'show band's tracks)"
-    type_of_search = gets.chomp.downcase
+    puts "Welcome to Tunr!"
+    play = 'Y'
+    while play == 'Y'
+        puts "What type of search will you do? (P = 'play random song by band', T = 'show band's tracks)"
+        type_of_search = gets.chomp.downcase
 
-    if type_of_search == 'p'
-      puts "enter your favorite band"
-      term = gets.chomp.gsub(' ', '+') # gsub? What's that? Why?
-      play_random_song_from_band(term)
-    elsif type_of_search == 't'
-      puts "enter your favorite band"
-      term = gets.chomp.gsub(' ', '+')
-      list_songs_by_band(term)
+        if type_of_search == 'p'
+            puts "enter your favorite band"
+            term = gets.chomp.gsub(' ', '+') # gsub? What's that? Why?
+            play_random_song_from_band(term)
+        elsif type_of_search == 't'
+            puts "enter your favorite band"
+            term = gets.chomp.gsub(' ', '+')
+            list_songs_by_band(term)
+        end
+
+        puts "Continue? (y/n)"
+        play = gets.chomp.upcase
     end
-
-    puts "Continue? (y/n)"
-    play = gets.chomp.upcase
-  end
 end
 
 #calls the method, makes the fun happen
