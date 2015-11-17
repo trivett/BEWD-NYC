@@ -23,10 +23,8 @@ require 'json'
 def search_itunes(term)
     base = "https://itunes.apple.com/search?term="
     url =  base + term
-    h = HTTParty.get(url) 
-    j = JSON.parse(h)
-    
-    j
+    response = HTTParty.get(url)
+    return JSON.parse(response)
 end
 
 
@@ -35,14 +33,14 @@ end
 ### step three ##
 #################
 
-# fill in the blanks for  list_songs_by_band that loops over the results of your request by calling search_itunes. this method then prints out all of the track names for the query along with 
+# fill in the blanks for  list_songs_by_band that loops over the results of your request by calling search_itunes. this method then prints out all of the track names for the query along with
 
 def list_songs_by_band(term)
     response = search_itunes(term)
     results = response["results"]
 
     results.each do |track|
-        puts track
+        puts track["trackName"]
     end
 
 end
@@ -52,10 +50,10 @@ end
 # Fill in the blanks for another method called play_random_song_from_band that takes a parameter (term)
 # This method will call search_itunes and pass its own parameter into that method.
 # instead of printing all of the songs, this method will pick one at random (I want you to look at the docs to find how to grab a random element from an array)
-# the way to take that song and play it is to find the previewUrl attribute of the song. 
+# the way to take that song and play it is to find the previewUrl attribute of the song.
 #instead of making the user copy the url and paste it him/herself there is a way to do this with ruby
 # Since it is a little obscure, here it is:
-# system("open", <url here as a string>) 
+# system("open", <url here as a string>)
 
 
 
@@ -63,12 +61,12 @@ def play_random_song_from_band(term)
     response = search_itunes(term)
     results = response["results"]
     pick = results.sample
-   
-    system("open", pick["previewUrl"]) 
+
+    system("open", pick["previewUrl"])
 end
 
 
-## this method will run the whole application: 
+## this method will run the whole application:
 def lets_go
     puts "Welcome to Tunr!"
     play = 'Y'
@@ -93,8 +91,3 @@ end
 
 #calls the method, makes the fun happen
 lets_go
-
-
-
-
-
