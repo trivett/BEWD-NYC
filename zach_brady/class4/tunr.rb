@@ -41,8 +41,12 @@ def list_songs_by_band(term)
     response = search_itunes(term)
     results = response["results"]
 
-    #loop over results here and print out each song title
+    results.each do |track|
+        puts track
+    end
+
 end
+
 
 
 # Fill in the blanks for another method called play_random_song_from_band that takes a parameter (term)
