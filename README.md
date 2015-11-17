@@ -24,8 +24,10 @@ Add this as an upstream repository like so:
 	
 	`cp assignments/class2/be_the_interpreter.rb YOURNAME/class2`
 
-	Of course, please replace YOURNAME with your actual name. DO NOT MAKE CHANGES IN OTHER STUDENTS' FOLDERS!
+	Of course, please replace YOURNAME with your actual name. DO NOT MAKE CHANGES OUTSIDE OF YOUR FOLDER!
+	
+	To make sure that you aren't committing extra stuff, please remember to pull from upstream before you start work and consider running `git checkout -- classwork/` to discard changes in that directory. 
 
-3. Make your edits on the files in your folder, and use `git add .`, `git commit -m `, and `git push origin master` to push the changes up to your fork of the homework repo.
+3. Make your edits on the files in your folder, and use `git add .` or `git add path/to/file/you/edited.rb`. Then  `git commit -m "message here"`, and `git push origin master` to push the changes up to your fork of the homework repo.
 4. Issue a pull request on github from your fork to the upstream repo, trivett/BEWD_NYC
 5. The instructors will review your code, leave comments, and merge your code in when you get it right.
