@@ -48,8 +48,8 @@ Follow the instructions in tunr.rb
 
 Answer the following questions:
 
-* What is the method that returns a random element from an array? 
-* What does .gsub(" ", "+") do on a string? Why is that part of the code of tunr.rb? 
+* What is the method that returns a random element from an array? A: .sample
+* What does .gsub(" ", "+") do on a string? A: It replaces any instances of the pattern with the replacement. Why is that part of the code of tunr.rb? A: Replaces spaces with plus sign 
 * In your words, explain how the loop in tunr.rb works to let the user continually keep playing new songs or requesting new song lists.
 
 3. BONUS: More Teddit
