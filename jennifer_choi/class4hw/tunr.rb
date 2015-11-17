@@ -55,7 +55,7 @@ def play_random_song_from_band(term)
   results = response["results"]
   pick = results.sample # Fill in this blank with the code that will grab a random member of the results array. Look at the Ruby Docs to find it.
   system("open", pick["previewUrl"]) 
-end
+end  
 
 
 ## this method will run the whole application: 
