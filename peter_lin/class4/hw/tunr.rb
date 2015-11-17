@@ -8,6 +8,9 @@
 
 # make these two libraries available to the program
 
+require 'httparty'
+require 'json'
+
 ###############
 ## step two ###
 ###############
@@ -22,12 +25,26 @@
 # then use HTTParty to GET the json, and save it to a variable
 # Then use the JSON gem to parse the json into a hash. that will be the return value of this method.
 
+def search_itunes(term)
+  url = "https://itunes.apple.com/search?term=" + term
+  response = HTTParty.get(url)
+  j = JSON.parse(response)
+  return j
+end
+
 
 #################
 ### step three ##
 #################
 #in groups of four
 # create a method called list_songs_by_band that loops over the results of your request by calling search_itunes. this method then prints out all of the track names for the query along with 
+
+def list_songs_by_band(term)
+  hash = search_itunes(term)
+  hash['results'].each do |result|
+    puts result['trackName']
+  end
+end
 
 
 
@@ -39,6 +56,11 @@
 # Since it is a little obscure, here it is:
 # system("open", <url here as a string>) 
 
+def play_random_song_from_band(term)
+  hash = search_itunes(term)
+  song = hash['results'].sample()
+  system("open", song['previewUrl'])
+end
 
 
 
