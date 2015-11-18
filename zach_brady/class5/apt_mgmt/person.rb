@@ -1,4 +1,4 @@
-class Student
+class Person
     attr_accessor :name, :gpa, :major, :age
 
     def initialize(name, gpa, major, age)
@@ -25,14 +25,14 @@ class Student
     end
 end
 
-#alice = Student.new("Alice", "A", "Math", 18)
-bob = Student.new("Bob", "B", "Lit", 20)
-#carlos = Student.new("Carlos", "C", "Chemistry", 23)
+#alice = Person.new("Alice", "A", "Math", 18)
+bob = Person.new("Bob", "B", "Lit", 20)
+#carlos = Person.new("Carlos", "C", "Chemistry", 23)
 
-# students = [alice, bob, carlos]
+# people = [alice, bob, carlos]
 
-# students.each do |student|
-#     puts student
+# people.each do |person|
+#     puts people
 # end
 
 puts bob
