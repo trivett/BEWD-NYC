@@ -15,7 +15,13 @@ class Apartment
     end
 
     def rent_too_damn_high
-
+        if (@rent / @sq_footage) > 2
+            puts "At #{ @rent } dollars for #{ @sq_footage } square feet, the rent is too! damn! high!!!"
+            return true
+        else
+            puts "At #{ @rent } dollars for #{ @sq_footage } square feet, the rent is reasonable"
+            return false
+        end
     end
 
     def is_occupied? 
@@ -25,9 +31,12 @@ class Apartment
             return true
         end
     end
+
 end
 
 a = Apartment.new("Tribeca", 5000, 600)
+b = Apartment.new("New Jersey", 2000, 2000)
 
-puts a.is_occupied?
+puts a.rent_too_damn_high
+puts b.rent_too_damn_high
 
