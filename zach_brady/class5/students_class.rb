@@ -21,13 +21,13 @@ class Student
     end
 
     def another_year_gone
-        @age= @age + 1
+        @age += 1
     end
 end
 
-alice = Student.new("Alice", "A", "Math", 18)
+#alice = Student.new("Alice", "A", "Math", 18)
 bob = Student.new("Bob", "B", "Lit", 20)
-carlos = Student.new("Carlos", "C", "Chemistry", 23)
+#carlos = Student.new("Carlos", "C", "Chemistry", 23)
 
 # students = [alice, bob, carlos]
 
