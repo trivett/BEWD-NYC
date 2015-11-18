@@ -15,7 +15,7 @@ class Apartment
     end
 
     def rent_too_damn_high
-        @rent / @sq_footage > 2
+        @rent / @sq_footage > 1
     end
 
     def is_occupied? 
@@ -23,10 +23,4 @@ class Apartment
     end
 
 end
-
-a = Apartment.new("Tribeca", 5000, 600)
-b = Apartment.new("New Jersey", 2000, 2000)
-
-puts a.rent_too_damn_high
-puts b.rent_too_damn_high
 
