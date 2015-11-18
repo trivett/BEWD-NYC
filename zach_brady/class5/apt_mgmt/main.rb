@@ -4,6 +4,8 @@ a = Apartment.new('Bed-Stuy', 715, 600)
 b = Apartment.new('Clinton Hill', 900, 800)
 c = Apartment.new('Brooklyn Heights', 1200, 800)
 
+z = Person.new("Zach", "B", "Liberal Arts")
+
 apartments = [a, b, c]
 
 
@@ -14,4 +16,4 @@ apartments.each do |apt|
 end
 
 
-c.add_renter("Ayal")
+c.add_renter(z)
