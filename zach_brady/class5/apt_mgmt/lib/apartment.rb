@@ -22,5 +22,9 @@ class Apartment
         @renters.length > 0 
     end
 
+    def add_renter(person)
+        @renters << person
+    end
+
 end
 

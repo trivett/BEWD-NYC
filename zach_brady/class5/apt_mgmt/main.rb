@@ -12,3 +12,6 @@ apartments.each do |apt|
         puts apt
     end
 end
+
+
+c.add_renter("Ayal")
