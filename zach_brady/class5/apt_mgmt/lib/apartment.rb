@@ -15,21 +15,11 @@ class Apartment
     end
 
     def rent_too_damn_high
-        if (@rent / @sq_footage) > 2
-            puts "At #{ @rent } dollars for #{ @sq_footage } square feet, the rent is too! damn! high!!!"
-            return true
-        else
-            puts "At #{ @rent } dollars for #{ @sq_footage } square feet, the rent is reasonable"
-            return false
-        end
+        @rent / @sq_footage > 2
     end
 
     def is_occupied? 
-        if @renters.length > 0 
-            return false
-        else
-            return true
-        end
+        @renters.length > 0 
     end
 
 end
