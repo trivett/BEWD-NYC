@@ -3,38 +3,38 @@ require_relative 'lib/client'
 require_relative 'lib/shelter'
 
 happitails = Shelter.new('HappiTails')
-animal = Animal.new
-client = Client.new
 
 puts happitails
 
-menu = "=====\nCreate Animal (enter a)\nCreate Client (enter c)\nQuit (enter q)"
+menu = "=====\nCreate Animal (enter a)\nCreate Client (enter c)\nDisplay All Animals (enter da)\nDisplay All Clients (enter dc)\nQuit (enter q)"
 
-def new_animal(animal,happitails)
+def new_animal(happitails)
 	puts "Enter the animal's name:"
-	animal.name = gets.chomp
+	name = gets.chomp
 	puts "Enter the animal's species:"
-	animal.species = gets.chomp
-	puts animal
-	happitails.animals << {name: animal.name, species: animal.species}
+	species = gets.chomp
+	happitails.animals << Animal.new(name,species)
 end
 
-def new_client(client,happitails)
+def new_client(happitails)
 	puts "Enter the client's name:"
-	client.name = gets.chomp
+	name = gets.chomp
 	puts "Enter the client's age:"
-	client.age = gets.chomp.to_i
-	puts client
-	happitails.clients << {name: client.name, age: client.age}
+	age = gets.chomp.to_i
+	happitails.clients << Client.new(name,age)
 end
 
 puts menu
 action = gets.chomp.upcase
 while action != "Q"
 	if action == "A"
-		new_animal(animal,happitails)
+		new_animal(happitails)
 	elsif action == "C"
-		new_client(client,happitails)
+		new_client(happitails)
+	elsif action == "DA"
+		happitails.display_animals
+	elsif action == "DC"
+		happitails.display_clients
 	end
 	puts menu
 	action = gets.chomp.upcase
