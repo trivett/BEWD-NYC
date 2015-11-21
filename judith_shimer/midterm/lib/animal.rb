@@ -1,6 +1,6 @@
 class Animal
 	attr_accessor :name, :species, :toys
-	def initialize(name,species)
+	def initialize
 		@name = name
 		@species = species
 		@toys = []
