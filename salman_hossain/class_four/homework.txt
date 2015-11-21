@@ -1,0 +1,15 @@
+Part 2 - Jukebox
+1. What is the method that returns a random element from an array?
+	rand
+
+(rand *10).to_i + 1
+
+2. .gsub(' ', '+') # gsub? What's that? Why?
+gsub is global substitution 
+ It re,moves the spaces and add + to it.
+for example 
+"hello".gsub("ll", "kk")
+
+-- In your words, explain how the loop in tunr.rb works to let the user continually keep playing new songs or requesting new song lists.
+
+- Based on the flag = Y , it promt user what they want to do, they can play or show band. When users enters P to play, it promt users to enter a band name. When user enter a band name with a space for example, backstreet boys, that where .gsub come in play, it replaces spalce with (+) and it loops play_random_song_from_band.quit

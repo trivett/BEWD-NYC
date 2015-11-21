@@ -1,4 +1,3 @@
-# Let's make an array of hashes to represent news stories in Teddit.
 story1 = {
   "headline" => "Obama Invites Pizza Rat to White House",
   "category" => "Politics",
@@ -52,8 +51,6 @@ end
 # Category: Politics
 # Upvotes: 90
 
-
-
 todays_news = []
 
 todays_news << story1
@@ -61,24 +58,28 @@ todays_news << story2
 todays_news << story3
 todays_news << user_story
 
+
+  puts "Do you want to enter a story? Y/N"
+  more_stories = gets.chomp
+
+  if more_stories == "Y"
+    user_story2 = {}
+
+    puts "headline please"
+    user_story2["headline"] = gets.chomp
+
+    puts "category please"
+    user_story2["category"] = gets.chomp
+
+    puts "upvotes please"
+    user_story2["upvotes"] = gets.chomp.to_i
+
+    todays_news << user_story2
+  else
+  end
+
 todays_news.each do |story|
-  print_story(story)
+    print_story(story)
 end
-
-
-
-
-
-#
-# Call the method on the variable that saves the user-submitted story
-
-# ================== step two ================
-# Push the hash of the user-created story into the array you defined earlier. You
-# can use either the .push method or that awesome shovel << method to do it.
-
-# let's iterate over the array of hashes and pass each (hint hint) one into the
-# method that prints them out all pretty.
-
-
 
 

@@ -2,23 +2,7 @@
 # This program will prompt the user for a headline, scan the headline for the word "cat" and the program will automatically assign fake upvotes to the story if there is the mention of a cat.
 
 
-
 # first, lets declare a method that will scan the story for the word cat or bacon. Let's name it calculate_upvotes
-<<<<<<< HEAD
-def calculate_upvotes(story)
-	#does story include "cat"
-	upvotes = 1 #setting upvotes to default at 1
-	if story.downcase.include?("cat") && story.downcase.include?("bacon")
-		upvotes *= 10
-	elsif story.downcase.include?("cat") || story.downcase.include?("bacon")
-		upvotes *= 5
-
-	end
-upvotes
-
-end
-=======
->>>>>>> 37ce272f11a150addff5fb2b569f273809b71543
 
 
 # it's return value should be the number of upvotes, which should default to one
@@ -26,17 +10,10 @@ end
 
 
 # now let's prompt the user to put in a news headline
-puts "Please enter a headline."
 
 
 
 # Save the user input as the variable story
-story = gets.chomp
-
-puts "New story added! Headline: #{story} #{calculate_upvotes(story)}"
-
-
-
 
 
 
@@ -46,4 +23,3 @@ puts "New story added! Headline: #{story} #{calculate_upvotes(story)}"
 # ---------------------------------
 
 # what about if a headline has cat AND bacon? 
-
