@@ -11,11 +11,8 @@ class Client
 
 	def to_s
 
-		puts "#{@name}"
+		puts "Here is your client name #{@name}, and his/here age #{@age}"
 
 	end
 end
 
-
-
-binding.pry

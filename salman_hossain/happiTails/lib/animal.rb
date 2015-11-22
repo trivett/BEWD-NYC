@@ -11,11 +11,10 @@ class Animal
 
 	def to_s
 
-		puts "#{@name}"
+	 "Your new #{@species} is named #{@name}"
 
 	end
 end
 
 
 
-binding.pry

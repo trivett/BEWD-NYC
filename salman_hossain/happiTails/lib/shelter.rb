@@ -15,4 +15,3 @@ class Shelter
 end
 
 
-binding.pry
