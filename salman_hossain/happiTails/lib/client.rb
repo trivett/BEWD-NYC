@@ -11,7 +11,7 @@ class Client
 
 	def to_s
 
-		puts "Here is your client name #{@name}, and his/here age #{@age}"
+		"Here is your client name #{@name}, and client age is #{@age}"
 
 	end
 end
