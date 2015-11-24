@@ -126,3 +126,32 @@ Paste in the following lines with all of the new terms and commands that you lea
 * What does `require 'httparty'` do in a Ruby program? 
 * Explain what `response = HTTParty.get "https://itunes.apple.com/search?term=smashing%20pumpkins"` does.
 * How do you parse `response` into a usable Ruby Hash object? 
+
+#Class 5 -- Classes and Objects
+* Class
+* Instance
+* Why do we have classes in Ruby? 
+* what does the `initialize` method do in a class?
+* How to set default attributes on new instances of a class? 
+* How to customize what comes out of the puts method for instances of a class?
+* What does `attr_accessor` do? 
+* What are instance variables? How do you get and set them? 
+* How do you bring functionality from one Ruby file into another? 
+* Why do we separate programs into several files?
+
+#Class6 -- Inheriting behavior
+
+* How to make one class inherit from another? 
+* Why is this valuable? 
+* How can a child class override methods in a parent class?
+* What are modules? 
+* How can they be useful? 
+* How to give a class all of the methods in a module?
+
+
+
+
+
+
+
+
