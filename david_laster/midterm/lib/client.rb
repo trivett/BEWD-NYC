@@ -10,13 +10,5 @@ class Client
 		"Name: #{@name} Age: #{@age}"
 	end
 
-# def new_client(c)
-#   puts "Enter the Client's name:"
-#   name = gets.chomp
-
-#   puts "Enter the Client's age:"
-#   age = gets.chomp.to_i
-#   c.clients << Client.new(name,age)
-# end
 
 end
