@@ -11,7 +11,9 @@ while true
     puts
     puts "Welcome to the Sugar Mutts Shelter Directory. "
     puts "  - (a) add an animal"
-    puts "  - (c) add a client"
+    puts "  - (b) add a client"
+    puts "  - (c) list all animals"
+    puts "  - (d) list all clients"
     puts "  - (q) quit"
     puts
 
@@ -39,7 +41,7 @@ while true
         $sugar_mutts.get_animals << new_animal
         puts "#{new_animal.get_name} was added to our shelter's database. "
 
-    when "c"
+    when "b"
         puts "What is the client's name? "
         name = gets.chomp
         puts "What is the client's age? "
@@ -55,6 +57,26 @@ while true
         new_client = Client.new(name, age, pets)
         $sugar_mutts.get_clients << new_client
         puts "#{new_client.get_name} was added to our shelter's database. "
+
+    when "c"
+        $sugar_mutts.get_animals.each do |animal|
+            puts "Animal name: " + animal.get_name
+            puts "Species: " + animal.get_species
+            if animal.get_toys.size != 0
+                puts "Toys:  " + animal.get_toys.join(", ")
+            end
+            puts
+        end
+
+    when "d"
+        $sugar_mutts.get_clients.each do |client|
+            puts "Client name: " + client.get_name
+            puts "Age: " + client.get_age.to_s
+            if client.get_pets.size != 0
+                puts "Pets:  " + client.get_pets.join(", ")
+            end
+            puts
+        end
 
 
     when "q"
