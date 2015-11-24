@@ -14,6 +14,8 @@ while true
     puts "  - (b) add a client"
     puts "  - (c) list all animals"
     puts "  - (d) list all clients"
+    puts "  - (e) adoption"
+    puts "  - (f) return pet (you asshole.)"
     puts "  - (q) quit"
     puts
 
@@ -78,6 +80,19 @@ while true
             puts
         end
 
+    when "e"
+        puts "Who wants to adopt? "
+        client = gets.chomp
+        puts "Who do they want to adopt? "
+        animal = gets.chomp
+        $sugar_mutts.adopt(animal, client)
+
+    when "f"
+        puts "Who's a bad person? "
+        client = gets.chomp
+        puts "Who do they want to abandon? "
+        animal = gets.chomp
+        $sugar_mutts.return_pet(animal, client)
 
     when "q"
         exit

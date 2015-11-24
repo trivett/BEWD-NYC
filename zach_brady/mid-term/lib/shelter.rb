@@ -26,7 +26,7 @@ class Shelter
         client.pets << animal
     end
 
-    def return_animal(animal, client)
+    def return_pet(animal, client)
         if client.pets.include? animal
             client.pets.delete(animal)
         end
