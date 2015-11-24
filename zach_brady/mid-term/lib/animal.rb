@@ -1,10 +1,10 @@
 class Animal
-    attr_accessor :name, :species
+    attr_accessor :name, :species, :toys
 
-    def initialize(name, species)
+    def initialize(name, species, toys=[])
         @name = name
         @species = species
-        @toys = []
+        @toys = toys
     end
 
     def get_name
