@@ -10,6 +10,22 @@ class Shelter
 		"Welcome to #{@name}!"
 	end
 
+	def new_animal
+		puts "Enter the animal's name:"
+		name = gets.chomp
+		puts "Enter the animal's species:"
+		species = gets.chomp
+		@animals << Animal.new(name,species)
+	end
+
+	def new_client
+		puts "Enter the client's name:"
+		name = gets.chomp
+		puts "Enter the client's age:"
+		age = gets.chomp.to_i
+		@clients << Client.new(name,age)
+	end
+
 	def adopt
 		puts "Select an animal! (Enter the number next to the animal)"
 		display_animals
