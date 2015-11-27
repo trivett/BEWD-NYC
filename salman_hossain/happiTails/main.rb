@@ -1,16 +1,17 @@
-require 'pry'
 require_relative 'lib/animal'
 require_relative 'lib/client'
 require_relative 'lib/shelter'
+#require_relative 'lib/seeds'
 
 animal_haven = Shelter.new("Animal Haven")
+require 'pry'; binding.pry
 
 #puts s.name
 option = ""
 while option.downcase != "q"	
 	
 	puts "Please choose following options: | Create animal (a) | Create Client (c) | Quit (q) |
-	Display all animals (da) | Display all clients (dc)"
+	Display all animals (da) | Display all clients (dc) | Adopt Pet (ap) | Animal Up for Adoption (up)| "
 	option = gets.chomp.downcase
 
 	if option == "a"
@@ -23,14 +24,8 @@ while option.downcase != "q"
 		animal_haven.animals << Animal.new(animal_name, animal_species)
 
 	elsif option == "da"
-			
-			if !animal_haven.animals.empty?
-				animal_haven.animals.each do |a|
-					puts a
-				end
-			else
-				puts " Sorry there is no animal"
-			end
+
+		animal_haven.display_all_animals
 
 	elsif option == "c"	
 		puts "Please enter a client name "
@@ -42,19 +37,23 @@ while option.downcase != "q"
 		animal_haven.clients << Client.new(client_name, client_age)
 
 	elsif option == "dc"
-		
-		if !animal_haven.clients.empty?
-				animal_haven.clients.each do |b|
-					puts b
-				end
-			else
-				puts " Sorry there is no clients "
-			end
-			
-	else option == "q"
 
+		animal_haven.display_all_client
+		
+	elsif option == "ap"
+	
+		animal_haven.adopt_animal
+
+	elsif option == "up"
+
+		animal_haven.put_up_for_adoption
+		
+	else option == "q"
+		
 		puts "You choose to quit this program"
 		exit
 	end
 	
 end
+
+

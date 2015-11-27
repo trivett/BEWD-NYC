@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class Animal
 	attr_accessor :name, :species, :toys
@@ -11,10 +11,11 @@ class Animal
 
 	def to_s
 
-	 "Your new #{@species} is named #{@name}"
+	 "#{@species} named #{@name}"
 
 	end
-end
 
+
+end
 
 

@@ -1,7 +1,5 @@
-require 'pry'
-
 class Client 
-	attr_accessor :name, :age
+	attr_accessor :name, :age, :pets
 
 	def initialize(name, age)
 		@name = name
@@ -11,8 +9,21 @@ class Client
 
 	def to_s
 
-		"Here is your client name #{@name}, and client age is #{@age}"
+	"Here is your client name #{@name}, and client age is #{@age}"
 
 	end
-end
 
+
+	def show_pets_all_pets
+		if !@pets.empty?
+			@pets.each do |b|
+
+			"#{pets.index(b)+1} #{b}"
+			end
+		else
+			puts "Sorry there is no pets available."
+			exit 
+		end
+	end
+
+end
