@@ -6,7 +6,7 @@ happitails = Shelter.new('HappiTails')
 
 puts happitails
 
-menu = "=====\nCreate Animal (enter a)\nCreate Client (enter c)\nDisplay All Animals (enter da)\nDisplay All Clients (enter dc)\nQuit (enter q)"
+menu = "=====\nCreate Animal (enter a)\nCreate Client (enter c)\nDisplay All Animals (enter da)\nDisplay All Clients (enter dc)\nAdopt (enter adopt)\nQuit (enter q)\n====="
 
 def new_animal(happitails)
 	puts "Enter the animal's name:"
@@ -35,6 +35,8 @@ while action != "Q"
 		happitails.display_animals
 	elsif action == "DC"
 		happitails.display_clients
+	elsif action == "ADOPT"
+		happitails.adopt
 	end
 	puts menu
 	action = gets.chomp.upcase
