@@ -3,6 +3,7 @@ require_relative 'lib/client'
 require_relative 'lib/shelter'
 require_relative 'seeds'
 
+s = create_shelter_data()
 
 while true
   puts '-----------------------------'
@@ -64,6 +65,7 @@ while true
     s.show_clients_with_nums()
     print 'Pick a client (by number): '
     client_num = gets.chomp.to_i
+    puts '-----------------------------'
     if client_num < 0 || client_num >= s.clients.length
       puts "Invalid client number. Try again."
       next
@@ -72,6 +74,7 @@ while true
     s.show_animals_with_nums()
     print 'Pick an animal to adopt (by number): '
     animal_num = gets.chomp.to_i
+    puts '-----------------------------'
     if animal_num < 0 || animal_num >= s.animals.length
       puts "Invalid animal number. Try again."
       next
@@ -92,6 +95,7 @@ while true
     s.show_clients_with_nums()
     print 'Pick a client (by number): '
     client_num = gets.chomp.to_i
+    puts '-----------------------------'
     if client_num < 0 || client_num >= s.clients.length
       puts "Invalid client number. Try again."
       next
@@ -106,6 +110,7 @@ while true
 
     print "Pick a pet to put up for adoption (by number): "
     pet_num = gets.chomp.to_i
+    puts '-----------------------------'
     if pet_num < 0 || pet_num >= s.clients[client_num].pets.length
       puts "Invalid animal number. Try again."
       next
