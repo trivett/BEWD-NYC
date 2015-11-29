@@ -15,7 +15,7 @@ class Animal
     return "#{ @name }, species: #{ species }"
   end
 
-  def show_toys_with_nums()
+  def show_toys_with_nums
     i = 0
     @toys.each do |toy|
       puts "(#{i}) #{toy}"

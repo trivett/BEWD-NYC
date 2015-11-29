@@ -12,8 +12,10 @@ class CatLady < Client
     if animal.species == "cat"
       @pets << animal
       puts "Animal successfully adopted"
+      return true
     else
       puts "Cat ladies can only adopt cats. Adoption failed"
+      return false
     end
   end
 
