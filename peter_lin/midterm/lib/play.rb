@@ -4,7 +4,7 @@ module Play
     if pet.toys.length == 0
       puts "The pet has no toys"
     else
-      pet.show_toys_with_nums()
+      pet.show_toys_with_nums
       print 'Pick a toy to play with (by number): '
       toy_num = gets.chomp.to_i
       puts '-----------------------------'

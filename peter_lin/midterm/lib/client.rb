@@ -18,9 +18,10 @@ class Client
   def take_pet(animal)
     @pets << animal
     puts "Animal successfully adopted"
+    return true
   end
 
-  def show_pets_with_nums()
+  def show_pets_with_nums
     i = 0
     @pets.each do |pet|
       puts "(#{i}) #{pet}"

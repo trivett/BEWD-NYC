@@ -7,7 +7,7 @@ class Shelter
     @clients = []
   end
 
-  def show_clients()
+  def show_clients
     if @clients.length == 0
       puts "The shelter has no clients"
     else
@@ -17,7 +17,7 @@ class Shelter
     end
   end
 
-  def show_animals()
+  def show_animals
     if @animals.length == 0
       puts "The shelter has no animals"
     else
@@ -27,7 +27,7 @@ class Shelter
     end
   end
 
-  def show_clients_with_nums()
+  def show_clients_with_nums
     i = 0
     @clients.each do |client|
       puts "(#{i}) #{client}"
@@ -35,7 +35,7 @@ class Shelter
     end
   end
 
-  def show_animals_with_nums()
+  def show_animals_with_nums
     i = 0
     @animals.each do |animal|
       puts "(#{i}) #{animal}"
@@ -45,8 +45,9 @@ class Shelter
 
   def client_is_adopting(client_num, animal_num)
     animal = @animals[animal_num]
-    @clients[client_num].take_pet(animal)
-    @animals.delete_at(animal_num)
+    if @clients[client_num].take_pet(animal)
+      @animals.delete_at(animal_num)
+    end
   end
 
   def client_putting_up_adoption(client_num, pet_num)
