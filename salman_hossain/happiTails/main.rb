@@ -1,10 +1,13 @@
+require 'pry'
 require_relative 'lib/animal'
 require_relative 'lib/client'
 require_relative 'lib/shelter'
-#require_relative 'lib/seeds'
+require_relative 'lib/seeds'
+
+binding.pry
 
 animal_haven = Shelter.new("Animal Haven")
-require 'pry'; binding.pry
+
 
 #puts s.name
 option = ""

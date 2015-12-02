@@ -1,6 +1,5 @@
 require_relative 'client'
 
-
 class Shelter
 	attr_accessor :name, :animals, :clients
 
@@ -16,7 +15,7 @@ class Shelter
 
 
 	def display_all_animals
-		if !@animals.empty?
+		if @animals.any?
 				@animals.each do |animal|
 					puts "#{@animals.index(animal)+1} #{animal}"
 				end
@@ -50,7 +49,7 @@ class Shelter
             ct = @clients[client_num]
 
             animal = @animals.delete_at(desired_pet_num)
-            ct.pets.push(animal)
+          
             puts "Your animal is successfully added to client #{animal.name}"
 
         else 
@@ -60,7 +59,6 @@ class Shelter
 
     def put_up_for_adoption
 
-    	puts "select a client"
     	display_all_client
     	client_num = gets.chomp.to_i-1
     	ct = @clients[client_num]
