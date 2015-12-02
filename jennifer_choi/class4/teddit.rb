@@ -43,8 +43,6 @@ def print_story(story)
   puts "============================="
 end
 
-
-
 # make a method that accepts a story as a parameter.
 # The method should print each story with the following format: 
 # Headline: Obama Invites Pizza Rat to White House
@@ -58,28 +56,6 @@ todays_news << story2
 todays_news << story3
 todays_news << user_story
 
-
-  puts "Do you want to enter a story? Y/N"
-  more_stories = gets.chomp
-
-  if more_stories == "Y"
-    user_story2 = {}
-
-    puts "headline please"
-    user_story2["headline"] = gets.chomp
-
-    puts "category please"
-    user_story2["category"] = gets.chomp
-
-    puts "upvotes please"
-    user_story2["upvotes"] = gets.chomp.to_i
-
-    todays_news << user_story2
-  else
-  end
-
 todays_news.each do |story|
-    print_story(story)
+  print_story(story)
 end
-
-
