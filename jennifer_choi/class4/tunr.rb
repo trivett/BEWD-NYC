@@ -24,8 +24,8 @@ require 'json'
 def search_itunes(term)
   base = "https://itunes.apple.com/search?term="
   url =  base + term
-  r = HTTParty.get(url)
-  j = JSON.parse(r)
+  response = HTTParty.get(url)
+  return JSON.parse(response)
 end
 
 #################
@@ -33,14 +33,6 @@ end
 #################
 
 # fill in the blanks for  list_songs_by_band that loops over the results of your request by calling search_itunes. this method then prints out all of the track names for the query along with 
-
-def list_songs_by_band(term)
-  response = search_itunes(term)
-  results = response["results"]
-  #loop over results here and print out each song title
-  results.each do |song|
-  puts song[“trackName”]
-end
 
 # Fill in the blanks for another method called play_random_song_from_band that takes a parameter (term)
 # This method will call search_itunes and pass its own parameter into that method.
