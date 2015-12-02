@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hellos from around the world</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h1>Hellos from the world</h1>
+
+
+<%= yield %>
+
+<footer>
+	<p>Copyright 2015 General Assembly</p>
+</footer>
+
+</body>
+</html>
