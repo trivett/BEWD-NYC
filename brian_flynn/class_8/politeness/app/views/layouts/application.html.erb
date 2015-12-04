@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Politeness</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style type="text/css" media="screen">
+    body {
+      background:  blue;
+    }
+    a {
+      color: white;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Hellos from around the world</h1>
+
+<p>Enter language:</p>
+
+<a href="http://localhost:3000/?language=english" title="english">English</a>
+<a href="http://localhost:3000/?language=spanish" title="spanish">Spanish</a>
+<br>
+
+<%= yield %>
+
+
+
+<footer>
+  <p>&copy; 2015 by Brian Flynn</p>
+</footer>
+
+</body>
+</html>

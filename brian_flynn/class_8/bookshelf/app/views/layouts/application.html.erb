@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookshelf</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style type="text/css" media="screen">
+    h1 {
+      font-family: sans-serif;
+    }
+
+    main p {
+      color: purple;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Here's some nonsense:</h1>
+  </header><!-- /header -->
+  <main>
+
+<%= yield %>
+
+  </main>
+  <footer>
+    <p>&copy; 2015 by Brian Danger Flynn</p>
+  </footer>
+
+</body>
+</html>
