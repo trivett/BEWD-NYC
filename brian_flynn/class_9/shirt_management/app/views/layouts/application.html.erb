@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShirtManagement</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style type="text/css" media="screen">
+    a {
+      padding: 10px;
+      color: white;
+      background: blue;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 0 10px 10px 0;
+    }
+
+
+  </style>
+</head>
+<body>
+<h1>T-Shirt Management App</h1>
+<hr><br>
+<a href="http://localhost:3000/tshirts">T-Shirts</a>
+<a href="http://localhost:3000/workshirts">Work Shirts</a>
+<%= yield %>
+
+</body>
+</html>
