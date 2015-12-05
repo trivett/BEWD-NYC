@@ -11,7 +11,7 @@ class Apartment
 
     def to_s
     	"I have a lovely apartment for you in #{@neighborhood.capitalize}, it's only
-    	#{rent} and you get #{@sq_footage} sq ft! Cozy!"
+    	#{@rent} and you get #{@sq_footage} sq ft! Cozy!"
     end
 
     def rent_too_damn_high?
