@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root 'movies#index'
   get '/movies' => 'movies#index' 
+  get '/:id' => 'movies#show' 
   get '/movies/:id' => 'movies#show' 
 
   # The priority is based upon order of creation: first created -> highest priority.
