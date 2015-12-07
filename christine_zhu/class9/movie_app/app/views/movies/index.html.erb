@@ -1,1 +1,14 @@
-Welcome to the Retflix! See our collection of movies below.
+<center><h2>Welcome to the Movie Time! See our collection of movies below.</h2></center>
+
+<ul>
+
+<% @movies.each do |t| %>
+	<li> Title: <%= t.title %> |
+	Description: <%= t.description %> |
+	Year Released: <%= t.year_released %> </li>
+
+<%end%>
+
+
+
+</ul>
