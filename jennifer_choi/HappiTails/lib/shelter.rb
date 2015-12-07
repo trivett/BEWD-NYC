@@ -10,14 +10,18 @@ class Shelter
 	end
 
 	def show_animals
+		i = 1
 		@animals.each do |animal|
-			puts "#{animal}"
+			puts "#{i}. #{animal.name}"
+			i +=1
 		end
 	end
 
 	def show_clients
+		i = 1
 		@clients.each do |client|
-			puts "#{clients}"
+			puts "#{i}. #{client.name}"
+			i +=1 
 		end
 	end
 
@@ -29,12 +33,7 @@ class Shelter
 		@clients << client
 	end
 
-	def adopt(client, animal)
-		client.pets << animal
-		@animals.delete(animal)
-	end
-
-  def to_s
-  	puts "This is the #{@name} shelter."
-  end
+  	def to_s
+  		puts "This is the #{@name} shelter."
+  	end
 end

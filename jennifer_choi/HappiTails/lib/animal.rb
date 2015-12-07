@@ -1,18 +1,13 @@
 class Animal
-	attr_accessor :name, :species, :toys
+	attr_accessor :name, :species
 
+	def to_s
+		puts "Animal #{@name} is a #{@species}."
+	end
+	
 	def initialize (name, species)
 		@name = name
 		@species = species
-		@toys = []
-	end
-
-	#def add_toy
-	#	@toys << toy
-	#end
-
-	def to_s
-		puts "Pet #{@name} is a #{@species} and they have #{@toys.length} toys."
 	end
 end
 
