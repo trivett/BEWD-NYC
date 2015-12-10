@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShirtManagement</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="header">
+	<h1>SHIRTS</h1>
+</div>
+
+<div class="content">
+<%= yield %>
+</div>
+
+<div class="footer">
+	<p>Copyright 2015</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+
+<ol>
+<% @companies.each do |company| %>
+    <li><%= company.id %> <%= link_to company.name, company %> | number of employees: <%= company.market_cap %> </li>
+<% end %>
+</ol>

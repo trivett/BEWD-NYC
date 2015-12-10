@@ -1,0 +1,15 @@
+body {
+	background:#CECEF6;
+	color:#0B3861;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+h1 {
+	margin-top:15%;
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:50px;
+	border:1px solid #0B3861;
+	text-align:center;
+}
