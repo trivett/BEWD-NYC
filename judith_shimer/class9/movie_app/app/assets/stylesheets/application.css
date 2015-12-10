@@ -1,0 +1,13 @@
+.header {
+	text-align:center;
+}
+
+.title {
+	font-weight:bold;
+}
+
+.movie {
+	margin:10px;
+	padding:10px;
+	border:1px solid red;
+}

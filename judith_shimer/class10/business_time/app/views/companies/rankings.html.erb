@@ -1,0 +1,5 @@
+<ul>
+	<% @companies.each  do |company| %>
+		<li><%= company.name %>: <%= company.market_capitalization %></li>
+	<% end %>
+</ul>

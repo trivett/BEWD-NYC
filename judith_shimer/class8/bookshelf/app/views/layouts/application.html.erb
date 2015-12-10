@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookshelf</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="header">
+	<h1>SOME BOOKS</h1>
+</div>
+
+<div class="content">
+<%= yield %>
+</div>
+
+<div class="footer">
+	<p>This Site Is The Best 2015</p>
+</div>
+
+</body>
+</html>
