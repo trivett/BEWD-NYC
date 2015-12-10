@@ -1,0 +1,18 @@
+<h2>T-Shirts</h2>
+
+<div class="table">
+	<div class="tr-header">
+		<div class="td">ID</div>
+		<div class="td">Color</div>
+		<div class="td">Size</div>
+		<div class="td">Rating</div>
+	</div>
+		<% @tshirts.each do |t| %>
+			<div class="tr">
+				<div class="td"><%= t.id %></div>
+				<div class="td"><%= t.color.upcase %></div>
+				<div class="td"><%= t.size.upcase %></div>
+				<div class="td"><%= t.rating %></div>
+			</div>
+		<% end %>
+</div>

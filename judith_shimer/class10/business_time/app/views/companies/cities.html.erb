@@ -1,0 +1,7 @@
+<p>Companies in <%= params[:city] %></p>
+
+<ul>
+	<% @companies.each  do |company| %>
+		<li><%= company.name %>: <%= company.number_of_employees %> employees</li>
+	<% end %>
+</ul>
