@@ -1,0 +1,5 @@
+<ul>
+	<% @profit.each do |company| %>
+		<li><%= company.id %>. Company: <%= company.name %> | Profit: <%= company.profit %> | <%= company.city %></li>
+	<% end %>
+</ul>
