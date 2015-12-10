@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<head>
+  <title>The Rock Paper Scissors Game</title>
+  <style>
+    h1{
+      padding-top: 60px;
+      padding-bottom: 20px;
+
+    }
+    body {
+      text-align: center;
+      background: url("http://rlv.zcache.com/rock_paper_scissors_hands_large_greeting_card-rb90c4456130240ec8d7707a9e60cf5d3_i1j3l_1024.jpg?rlvnet=1");
+      background-size: 1400px 1000px;
+      /*background-size: cover;
+      background-position:center;*/
+      color: red;
+      font-family: helvetica;
+    }
+    p{
+      font-size:22px;
+    }
+    a{
+    border-style: dotted;
+    /*position:fixed;*/
+    bottom:10px;
+    right:0px;
+    height:20px;
+    width:250px;
+    background-color:red;
+
+    font-size:22px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- <p>--------------------------------------------------------------------------</p> -->
+  <h1> Youve made your pick. here are the results: </h1>
+  <!-- <p>--------------------------------------------------------------------------</p> -->
+
+  <p> You have chosen the : <%= @userMove  %> </p>
+
+  <p>The computer has chosen the: <%= @computerMove %> </p>
+
+  <p> The winner is: <%= @winner %>  </p>
+
+  <a href="http://localhost:3000/">care to play again?</a>
+
+
+
+</body>
