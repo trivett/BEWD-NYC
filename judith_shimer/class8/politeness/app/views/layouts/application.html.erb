@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Politeness</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="/app/assets/stylesheets/pretty.css">
+</head>
+<body>
+
+	<div class="header">
+		WELCOME TO MY WEBSPACE
+	</div>
+
+<%= yield %>
+
+	<div class="footer">
+		Copyright Jude 2015
+	</div>
+
+</body>
+</html>

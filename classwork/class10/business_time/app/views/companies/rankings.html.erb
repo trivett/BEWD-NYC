@@ -1,0 +1,6 @@
+
+<ol>
+<% @companies.each do |company| %>
+    <li><%= company.id %> company: <%= company.name %> | Market cap: <%= company.market_cap %></li>
+<% end %>
+</ol>
