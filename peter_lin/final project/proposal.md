@@ -13,7 +13,3 @@ The site will a need a gem for loading files (Carrier wave) for displaying resum
 Possible Schemas: Person, Interview, Payment checkout
 
 The HTTPS module, part of the rails gem, can be used for secured payments.
-
-(Note: I’ll be working with a friend who basically designed this layout for me. I have no idea how feasible this project is)
-
- 
