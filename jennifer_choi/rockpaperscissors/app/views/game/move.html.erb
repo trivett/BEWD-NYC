@@ -1,0 +1,10 @@
+<p>Robot threw: <%= @robot_move.capitalize %></p>
+<p>Player threw: <%= @player_move.capitalize %></p>
+<h2><%= @result %></h2>
+
+<p>Play again:</p>
+<ul>
+	<li><%= link_to "Rock", "http://localhost:3000/game/rock" %></li>
+	<li><%= link_to "Paper", "http://localhost:3000/game/paper" %></li>
+	<li><%= link_to "Scissors", "http://localhost:3000/game/scissors" %></li>
+</ul>
