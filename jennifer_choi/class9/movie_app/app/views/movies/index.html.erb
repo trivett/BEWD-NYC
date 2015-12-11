@@ -2,6 +2,8 @@
 
 <ul>
 <% @movies.each do |m| %>
-	<li>Title: <%= m.title%> | Description: <%= m.description%> | Year Released: <%= m.year_released%></li>
+	<li>Title: <%= link_to m.title, m %> | Description: <%= m.description%> | Year Released: <%= m.year_released%></li>
 <% end %>
 </ul>
+
+<%= link_to "New Movie", new_movie_path %>

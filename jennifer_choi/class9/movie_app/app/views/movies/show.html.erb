@@ -1,5 +1,7 @@
 <ul>
-	<li><%= @movies.color %></li>
-	<li><%= @movies.size %></li>
-	<li><%= @movies.rating %></li>
+	<li><%= @movie.title %></li>
+	<li><%= @movie.description %></li>
+	<li><%= @movie.year_released %></li>
 </ul>
+
+<%= link_to 'DELETE', @movie, method: :delete, data: {confirm: 'Are you sure?'} %>
