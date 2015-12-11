@@ -19,7 +19,18 @@ class MoviesController < ApplicationController
   end
 
   def create
-    # safe_product_params = params.require(:movie).require()
+    safe_product_params = params.require(:movie).permit(:title, :description, :year_released)
+    @movie = Movie.new(safe_product_params)
+    if @movie.save
+      flash[:notice] = "Movie created!"
+      redirect_to movies_path
+    else
+      flash[:notice] = "Didn't work!"
+      redirect_to new_movie_path
+    end
   end
+
+
+ 
 
 end
