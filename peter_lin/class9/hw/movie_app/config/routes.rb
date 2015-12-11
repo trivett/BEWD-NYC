@@ -2,9 +2,11 @@ Rails.application.routes.draw do
 
 
   root 'movies#index'
-  get '/movies' => 'movies#index' 
-  get '/:id' => 'movies#show' 
-  get '/movies/:id' => 'movies#show' 
+  # get '/movies' => 'movies#index' 
+  # get '/:id' => 'movies#show' 
+  # get '/movies/:id' => 'movies#show' 
+
+  resources :movies
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

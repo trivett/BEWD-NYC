@@ -1,1 +1,7 @@
+<p>
 <%= @movie.title %>, Description: <%= @movie.description %>, Year Released: <%= @movie.year_released %>
+</p>
+
+<p>
+<%= link_to "Delete Movie?!", @movie, method: :delete, data: {confirm: "are you sure?"} %>
+</p>
