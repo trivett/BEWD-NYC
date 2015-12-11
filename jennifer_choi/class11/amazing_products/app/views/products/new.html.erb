@@ -1,0 +1,5 @@
+<%= form_for @newproduct do |f| %>
+  <p>Name: <%= f.text_field :name %></p>
+  <p>Price: <%= f.text_field :price %></p>
+  <%= f.submit "Add Product" %>
+<% end %> <!-- ending the form -->
