@@ -1,0 +1,11 @@
+<h2><% @movies.title %></h2>
+
+<p> <b> Title: </b> <%= @movies.title %> </p>
+
+<p> <b>Description: </b> <%= @movies.description %> | <b> Year_Released:</b> <%= @movies.year_released %><p>
+
+
+
+<%= button_to "Back", movies_path, :class => "button", :method => :get  %> 
+
+<%= button_to "DELETE", @movie, :method => :delete %>

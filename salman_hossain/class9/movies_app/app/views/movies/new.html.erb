@@ -1,0 +1,20 @@
+<%= form_for @movies do |f| %>
+
+      <%= f.label :movie_title %>
+      <%= f.text_field :title, class: 'form-control' %>
+
+      <%= f.label :description %>
+      <%= f.text_field :description, class: 'form-control' %>
+
+      <%= f.label :year_released %>
+      <%= f.text_field :year_released, class: 'form-control' %>
+
+	<p><%= f.submit %></p>
+
+
+<% end %> 
+
+
+<%= button_to "Back", movies_path, :class => "button", :method => :get  %>
+
+
