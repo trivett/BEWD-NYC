@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hellos from aroung the world</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1> hellos from around the world:</h1>
+
+<%= yield %> <!-- this runs the ruby code. -->
+
+<div class="footer">
+    <p> this is my footer </p>
+</div>
+</body>
+</html>

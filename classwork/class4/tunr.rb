@@ -57,7 +57,7 @@ def lets_go
 
     if type_of_search == 'p'
       puts "enter your favorite band"
-      term = gets.chomp.gsub(' ', '+')
+      term = gets.chomp.gsub(' ', '+') # gsub? What's that? Why?
       play_random_song_from_band(term)
     elsif type_of_search == 't'
       puts "enter your favorite band"

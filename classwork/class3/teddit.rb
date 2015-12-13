@@ -4,32 +4,16 @@
 
 # first, lets declare a method that will scan the story for the word cat or bacon. Let's name it calculate_upvotes
 
-def calculate_upvotes(story)
-
-  upvotes = 1
-
-  if story.downcase.include?("cat") && story.downcase.include?("bacon")
-    upvotes *= 10
-  elsif story.downcase.include?("cat") || story.downcase.include?("bacon") 
-    upvotes *= 5
-  end
-  upvotes
-end
-
 
 # it's return value should be the number of upvotes, which should default to one
 # let's check the ruby docs for a method that checks whether a substring (part of a string) is included in a string.
 
 
 # now let's prompt the user to put in a news headline
-puts "Enter a headline"
 
 
 
 # Save the user input as the variable story
-story = gets.chomp
-
-puts "New story added! Headline: #{story } #{ calculate_upvotes(story)}" 
 
 
 
