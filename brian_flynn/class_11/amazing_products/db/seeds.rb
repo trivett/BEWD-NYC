@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-# Tshirt.create(color: "red", size: "xxl", rating: 3)
-# Workshirt.create(color: "brown", size: "xs", rating: 5)
-
+Product.create(name: "Furminator", price: 30)
+Product.create(name: "Cat Rain Coat", price: 45)
+Product.create(name: "Pet Tote Bag", price: 65)
+puts "done seeding!"

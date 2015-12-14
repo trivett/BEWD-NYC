@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BusinessTime</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h2 style="font-family:sans-serif;">Company App</h2>
+<a href="http://localhost:3000/companies" target="_blank">Home</a>
+<a href="http://localhost:3000/companies/rankings"  target="_blank" title="Ranking">Ranking</a>
+<%= yield %>
+
+</body>
+</html>
