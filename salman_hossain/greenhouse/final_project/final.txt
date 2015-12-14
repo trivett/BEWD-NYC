@@ -1,0 +1,16 @@
+Final Project 
+<Greenhouse Directory>
+
+Description:
+We want to create greenhouse employees directory, where people can search who they are and what they do. We want to add new people with there location, fun facts, employees hierarchy key (who they reporting to), with a employees picture attached and location zone where they are seating, search for exiting employees with respect to location, delete and edit.
+
+Core requirement.
+Will have 
+- Register Page
+- Sign In page
+- Sign out page
+- Add people page
+- edit page with pre populated values
+- show page
+- Navigation bar 
+- gems: simple form and bootstrap-sass
