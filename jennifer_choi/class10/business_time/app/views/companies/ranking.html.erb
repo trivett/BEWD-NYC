@@ -1,0 +1,7 @@
+hello
+
+<ul>
+	<% @ranking.each do |company| %>
+		<li><%= company.id %>. Company: <%= company.name %> | <%= company.city %></li>
+	<% end %>
+</ul>
