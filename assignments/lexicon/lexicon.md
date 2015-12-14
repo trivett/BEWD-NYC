@@ -148,9 +148,62 @@ Paste in the following lines with all of the new terms and commands that you lea
 * How can they be useful? 
 * How to give a class all of the methods in a module?
 
+#Class7 -- Installing Rails
 
+* Rails:
+* DHH:
+* `rails new xyz`:
+* rbenv:
+* scaffolding:
+* rake:
+* Rails public folder:
 
+#Class 8 -- Control flow in Rails
 
+* What is the first part of a rails app that gets hit by an HTTP request?
+* How is a route formatted? 
+* given a route `get '/products' => 'products#index'` what controller needs to exist? 
+* What action needs to exist?
+* What view needs to exist? 
+* What do controllers inherit from?
+* What is the naming convention for controllers? 
+* What is the naming convention for views? 
+* What is the name of the hash that comes with every HTTP request?
+* What would said hash be given this: `?product_tye=electronics&maxPrice=80'` at the end of a url?
+* How can you set query parameters in a route? 
+* In your words, what does a controller _do_?
+
+#Class 9 -- Models intro
+
+* Write a rails generator that creates a model Bike that has the attributes seat_height, type, and wheel_size
+* What do models inherit from?
+* After generating a model, how do you create that table in the database? 
+* `rails c`: 
+* In the rails console, how would you create a new bike, type being fixie, seat height 55 and wheel size of 700?
+* How would you pass all bike objects to the Bike controller index action? 
+* In the index view, how would you loop over that and display all bikes? 
+* How would you declare a route to show just one bike?
+* In the show action, how do you find a bike by id? 
+* In your words, what is a model? What is a database?
+
+#Class 10
+
+* How to define resourceful routes: 
+* What are the 7 routes that that one line of code gives you? what are they usually used for?
+* How to link to a `show` action in a view:
+* What are two ways that you can view all of the available routes in your app?
+* How to add columns to a pre-exising database table:
+* How to remove them:
+* Assuming a `Person` model with attribute `age`, how can you query the database (in the console or controller) to return all Person records ordered by age?
+
+#Class 11
+
+* HTTP method to show a new object form:
+* HTTP method that happens after you click submit:
+* Why do we use a permit params filter when we handle forms?
+* Why do we extract it into a separate private method?
+* How to redirect the user to a different view:
+* How to make it impossible to save a record without a particular field:
 
 
 

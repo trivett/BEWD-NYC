@@ -1,0 +1,9 @@
+
+<p>Companies in <%= @city %></p>
+<ul>
+<% @companies.each do |company| %>
+    <li> company: <%= company.name %> | number of employees: <%= company.market_cap %></li>
+<% end %>
+
+
+</ul>

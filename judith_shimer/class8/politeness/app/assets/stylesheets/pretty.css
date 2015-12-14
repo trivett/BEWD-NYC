@@ -1,0 +1,22 @@
+body {
+	background:gray;
+	font-family:sans-serif;
+}
+
+.header {
+	background:black;
+	color:white;
+	margin:50px;
+	padding:50px;
+	text-transform:uppercase;
+}
+
+.content {
+	margin:50px;
+	padding:50px;
+}
+
+.footer {
+	padding:50px;
+	text-align:center;
+}

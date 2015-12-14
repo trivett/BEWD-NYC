@@ -1,0 +1,3 @@
+BEWD-25 final project proposal
+
+A clone of http://www.experienceproject.com/ that is focused on sharing images/short text/embedded YouTube videos. Login is required to post. User can do a keyword search (would love to add in AJAX search) for a different 'experience' or add a new one. Pages will list posts added by different users and users will be able to vote up/down posts on pages. Option of sorting by top/random posts on individual pages. Front page can list some 'recently made/random/most active' pages.
