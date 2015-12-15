@@ -186,9 +186,24 @@ Paste in the following lines with all of the new terms and commands that you lea
 * In the show action, how do you find a bike by id? 
 * In your words, what is a model? What is a database?
 
+#Class 10
 
+* How to define resourceful routes: 
+* What are the 7 routes that that one line of code gives you? what are they usually used for?
+* How to link to a `show` action in a view:
+* What are two ways that you can view all of the available routes in your app?
+* How to add columns to a pre-exising database table:
+* How to remove them:
+* Assuming a `Person` model with attribute `age`, how can you query the database (in the console or controller) to return all Person records ordered by age?
 
+#Class 11
 
+* HTTP method to show a new object form:
+* HTTP method that happens after you click submit:
+* Why do we use a permit params filter when we handle forms?
+* Why do we extract it into a separate private method?
+* How to redirect the user to a different view:
+* How to make it impossible to save a record without a particular field:
 
 
 

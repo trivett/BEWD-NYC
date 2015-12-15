@@ -1,0 +1,18 @@
+  <h1>Update your Movies</h1>
+
+    <%= form_for @movies do |x| %>
+
+      <%= x.label :title %>
+      <%= x.text_field :title, class: 'form-control' %>
+
+      <%= x.label :description %>
+      <%= x.email_field :description, class: 'form-control' %>
+
+      <%= x.label :year_released %>
+      <%= x.password_field :year_released, class: 'form-control' %>
+
+      <%= x.submit "Save changes", class: "btn btn-primary" %>
+   
+    <% end %>
+    
+<%= button_to "Back", movies_path, :class => "button", :method => :get  %>

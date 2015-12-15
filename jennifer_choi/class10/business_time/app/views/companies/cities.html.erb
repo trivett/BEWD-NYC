@@ -1,0 +1,6 @@
+<h2><%= @city %></h2>
+<ul>
+	<% @companies.each do |company| %>
+		<li><%= company.id %>. Company: <%= company.name %> | Number of employees: <%= company.number_of_employees %> | <%= company.city %></li>
+	<% end %>
+</ul>
