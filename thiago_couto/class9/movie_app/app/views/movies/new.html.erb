@@ -3,6 +3,7 @@
 <%= form_for @movie do |m| %>
 	Name: <%= m.text_field :title, :placeholder => "Full movie title" %><br>
 	Release: <%= m.text_field :release, :placeholder => "Four digit year" %><br>
+	Description: <%= m.text_field :description, :placeholder => "Quick comment" %><br>
 	<%= m.submit "Add Movie" %>
 <% end %>
 

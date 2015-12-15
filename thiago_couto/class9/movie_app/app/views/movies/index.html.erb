@@ -2,7 +2,7 @@
 
 <ul>
 	<% @movies.each do |m| %>
-	<li><%= link_to m.title, m %> was released in <%= m.release %></li>
+	<li><%= link_to m.title, m %> was released in <%= m.release %>.  <%= m.description %></li>
 	<% end %>
 </ul>
 

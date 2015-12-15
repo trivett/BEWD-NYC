@@ -30,6 +30,6 @@ class MoviesController < ApplicationController
 	private
 
 	def safe_movie_params
-		params.require(:movie).permit(:title, :release)
+		params.require(:movie).permit(:title, :release, :description)
 	end
 end
