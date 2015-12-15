@@ -1,7 +1,9 @@
+<h2>Add a Movie</h2>
+
 <%= form_for @movie do |m| %>
-	Name: <%= m.text_field :title %><br>
-	Release: <%= m.text_field :release %><br>
-	<%= m.submit "Add Product" %>
+	Name: <%= m.text_field :title, :placeholder => "Full movie title" %><br>
+	Release: <%= m.text_field :release, :placeholder => "Four digit year" %><br>
+	<%= m.submit "Add Movie" %>
 <% end %>
 
-<%= link_to "Index", movies_path %>
+<br/><%= link_to "Index", movies_path %>

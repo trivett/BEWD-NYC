@@ -12,8 +12,24 @@ class MoviesController < ApplicationController
 	end
 
 	def create
-		movie_params = params.require(:movie).permit(:name, :release)
-		Movie.create(movie_params)
+		@movie = Movie.new(safe_movie_params)
+		if @movie.save
+			flash[:notice] = 'Movie saved!'
+			redirect_to movies_path
+		else
+			flash[:notice] = 'Movie was not saved! Try again ...'
+			redirect_to new_movie_path
+		end
+	end
+
+	def destroy
+		Movie.find(params[:id]).destroy
 		redirect_to movies_path
+	end
+
+	private
+
+	def safe_movie_params
+		params.require(:movie).permit(:title, :release)
 	end
 end

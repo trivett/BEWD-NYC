@@ -1,4 +1,5 @@
 <h2><%= @movie.title %></h2>
-<p>This movie was release on <%= @movie.release %></p>
+<p>This movie was released on <%= @movie.release %></p>
 
 <%= link_to "Index", movies_path %>
+<%= link_to "Delete", @movie, :method => :delete, data: {confirm: 'Are you sure?'} %>

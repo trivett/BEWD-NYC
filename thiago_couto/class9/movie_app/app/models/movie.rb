@@ -1,3 +1,4 @@
 class Movie < ActiveRecord::Base
-	validates :title, presence: true, length: {is: 4}
+	validates :release, presence: true, length: {is: 4}
+	# validates :title, presence: true, length: {minimum: 1}
 end
