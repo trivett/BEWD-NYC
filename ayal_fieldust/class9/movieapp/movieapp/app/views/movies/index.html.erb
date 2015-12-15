@@ -1,0 +1,12 @@
+<h2>Welcome to the largest movie database (on this computer). </h2>
+
+
+<ul>
+
+  <% @movies.each do |movie| %>
+      <li> <%= movie.id %>. <%= link_to movie.title, movie %></li>
+  <% end %>
+
+  <p> <%= link_to "New movie", new_movie_path %> </p>
+
+</ul>
