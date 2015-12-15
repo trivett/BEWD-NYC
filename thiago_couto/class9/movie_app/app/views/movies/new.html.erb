@@ -1,0 +1,7 @@
+<%= form_for @movie do |m| %>
+	Name: <%= m.text_field :title %><br>
+	Release: <%= m.text_field :release %><br>
+	<%= m.submit "Add Product" %>
+<% end %>
+
+<%= link_to "Index", movies_path %>
