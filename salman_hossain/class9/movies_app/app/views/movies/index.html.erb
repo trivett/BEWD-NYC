@@ -1,0 +1,23 @@
+<h3> Here are the list of new Movies</h3>
+
+<%= form_tag("/movies", :method => 'get') do %> 
+  
+    <%= text_field_tag :search %>
+    <%= submit_tag ("Search") %>
+
+<% end %>
+
+<%= button_to "Add New Movies", new_movie_path, :class => "button", :method => :get  %>
+
+<% if @movies.empty? %>
+	<p> No results found! </p>
+<% end %>
+
+<% @movies.each do |x| %>
+
+	<p> <%= link_to x.title, x %> </p>
+
+<% end %>
+
+
+

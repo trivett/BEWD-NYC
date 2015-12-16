@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h2>Movies</h2>
+
+<%= flash[:notice] %>
+<%= yield %>
+
+<p><%= link_to "Back to Homepage", movies_path %></p>
+
+</body>
+</html>

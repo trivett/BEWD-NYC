@@ -1,0 +1,7 @@
+<ul>
+	<li><%= @movie.title %></li>
+	<li><%= @movie.description %></li>
+	<li><%= @movie.year_released %></li>
+</ul>
+
+<%= link_to 'DELETE', @movie, method: :delete, data: {confirm: 'Are you sure?'} %>

@@ -1,0 +1,8 @@
+<h1>Companies</h1>
+
+
+<ul>
+	<% @companies.each do |company| %>
+		<li><%= company.id %>. Company: <%= company.name %>: <%= link_to company.name, company %> | Profit: <%= company.profit %> | Market Capitalization: <%= company.market_capitalization %> | <%= company.city %> </li>
+	<% end %>
+</ul>
