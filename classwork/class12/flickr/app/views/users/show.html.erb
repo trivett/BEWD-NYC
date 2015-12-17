@@ -1,0 +1,6 @@
+<h1><%= @user.name %> </h1>
+
+<% @photos.each do |s| %>
+  <img src="<%= s.url %>">
+  <p><%= link_to s.caption, s %></p>
+<% end %>
