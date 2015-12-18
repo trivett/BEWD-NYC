@@ -1,0 +1,11 @@
+<h1><%= @course.name.capitalize %></h1>
+<h2>Instructor: <%= @course.instructor.name %></h2>
+
+<% @students.each do |s| %>
+
+  <p><b> <%= s.name %> | Grade: <%= s.grade %> </b> </p>
+
+<% end %>
+
+
+<%= link_to "New Student", new_course_student_path  %>
