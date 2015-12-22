@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Flickr</title>
+  <title>GeneralAssembly</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<p>Flickr is back</p>
 <%= flash[:notice] %>
-<p><%= link_to "New Photo", new_photo_path %></p>
 
 <%= yield %>
 

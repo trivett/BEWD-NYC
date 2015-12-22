@@ -16,9 +16,11 @@ class PhotosController < ApplicationController
     @photo = Photo.new(photo_params)
 
     if @photo.save
+      flash[:notice] = "photo created!"
       redirect_to photos_path
     else
-      render new_photo_path
+      flash[:notice] = "nooooope"
+      render :new
     end
 
   end
