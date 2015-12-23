@@ -1,4 +1,4 @@
-#New Clothes Network Schema
+#New Clothes Network Outline
 
 ##User
 Username
