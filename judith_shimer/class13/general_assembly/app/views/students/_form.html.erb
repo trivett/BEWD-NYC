@@ -1,0 +1,5 @@
+<%= form_for [@course, @student] do |f| %>
+	<p>Name: <%= f.text_field :name %></p>
+	<p>Grade: <%= f.text_field :grade %></p>
+	<p><%= f.submit %></p>
+<% end %>

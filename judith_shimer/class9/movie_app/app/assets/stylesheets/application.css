@@ -1,3 +1,10 @@
+body {
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:sans-serif;
+}
+
 .header {
 	text-align:center;
 }
@@ -7,7 +14,24 @@
 }
 
 .movie {
-	margin:10px;
+	margin-bottom:10px;
+	margin-top:10px;
 	padding:10px;
 	border:1px solid red;
+}
+
+.button {
+	border:5px solid black;
+	padding:10px;
+	width:100px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a {
+	color:red;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:12pt;
 }

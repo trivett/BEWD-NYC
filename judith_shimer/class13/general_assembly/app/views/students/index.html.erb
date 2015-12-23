@@ -1,0 +1,9 @@
+<p><%= link_to "back to list of courses", root_path %></p>
+<h2>Course: <%= @course.name.upcase %></h2>
+<h3>Instructor: <%= @instructor.name.capitalize %></h3>
+
+<p class="button"><a href="<%= new_course_student_path %>">new student</a></p>
+
+<% @students.each do |s| %>
+	<p>Name: <%= link_to s.name.capitalize, [s.course, s] %> | Grade: <%= s.grade %></p>
+<% end %>

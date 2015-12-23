@@ -1,0 +1,6 @@
+<%= form_for @photo do |form| %>
+	<p>Photo URL: <%= form.text_field :url %></p>
+	<p>Caption: <%= form.text_field :caption %></p>
+	<p><%= collection_select(:photo, :user_id, User.all, :id, :name) %></p>
+	<p><%= form.submit %></p>
+<% end %>
