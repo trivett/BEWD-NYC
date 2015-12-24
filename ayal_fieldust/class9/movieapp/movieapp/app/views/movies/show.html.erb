@@ -1,0 +1,9 @@
+ <h2> <%= @movie.title %> </h2>
+
+
+<p>description: <%= @movie.description%></p>
+<p>Year released: <%= @movie.year_released%></p>
+
+<%= link_to "DELETE", @movie, method: :delete, data: {confirm: "are you sure?"} %>
+
+<p> <%= link_to "New movie", new_movie_path %> </p>
