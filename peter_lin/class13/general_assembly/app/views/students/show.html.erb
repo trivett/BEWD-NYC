@@ -1,0 +1,6 @@
+<h2><%= @student.name %></h2>
+
+<%= link_to 'Edit Student', edit_course_student_path(@course,@student) %>
+
+<br />
+<%= link_to "Delete Student", [@course,@student], method: :delete, data: {confirm: "are you sure?"} %>

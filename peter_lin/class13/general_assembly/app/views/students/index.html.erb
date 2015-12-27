@@ -1,11 +1,19 @@
 <h1><%= @course.name.capitalize %></h1>
-<h2>Instructor: <%= @course.instructor.name %></h2>
+<% if !@course.instructor.nil? %>
+  <h2>Instructor: <%= @course.instructor.name %></h2>
+<% else %>
+  <h3>No Instructors</h3>
+<% end %>
 
 <% @students.each do |s| %>
 
-  <p><b> <%= s.name %> | Grade: <%= s.grade %> </b> </p>
+  <% @title =  s.name + " | Grade: " + s.grade.to_s %>
+  <p><b> <%= link_to @title, course_student_path(@course,s) %> </b> </p>
 
 <% end %>
 
 
 <%= link_to "New Student", new_course_student_path  %>
+
+<br />
+<%= link_to "Delete Course", @course, method: :delete, data: {confirm: "are you sure?"} %>

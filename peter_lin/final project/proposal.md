@@ -13,3 +13,9 @@ The site will a need a gem for loading files (Carrier wave) for displaying resum
 Possible Schemas: Person, Interview, Payment checkout
 
 The HTTPS module, part of the rails gem, can be used for secured payments. We will also need SSL certificates.
+
+chronic
+
+twilio
+action mailer
+amazon s3
