@@ -1,0 +1,5 @@
+<div class="movie">
+	<p class="title"><%= @movie.title %> - <%= @movie.year %></p>
+	<p><%= @movie.summary %></p>
+</div>
+<div class="button"><%= link_to "delete movie", movie_path(@movie), method: :delete, data: {confirm: "Are you sure?" } %></div>

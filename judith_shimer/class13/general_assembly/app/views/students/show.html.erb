@@ -1,0 +1,5 @@
+<p>Name: <%= @student.name.capitalize %></p>
+<p><%= link_to "back to course", course_students_path %></p>
+
+<p><%= link_to "edit student", edit_course_student_path %></p>
+<p><%= link_to "delete student", course_student_path(@course, @student), method: :delete, data: { confirm: "Are you sure?"} %></p>

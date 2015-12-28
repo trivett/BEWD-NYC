@@ -1,16 +1,9 @@
-<div class="header">
-	<h1>Jude's Moves</h1>
-</div>
-<h2>Hey yo welcome to the movies app!  Check out these awesome movies below.</h2>
+<h2>ALL MOVIES</h2>
+
+<div class="button"><%= link_to "new movie", new_movie_path %></div>
+
+<% @movies.each do |movie| %>
 <div class="movie">
-	<p class="title">Terminator</p>
-	<p>1984</p>
+	<p class="title"><%= link_to movie.title, movie %> - <%= movie.year %></p>
 </div>
-<div class="movie">
-	<p class="title">Harry Potter and the Goblet of Fire</p>
-	<p>2005</p>
-</div>
-<div class="movie">
-	<p class="title">The Girl with the Dragon Tattoo</p>
-	<p>2011</p>
-</div>
+<% end %>

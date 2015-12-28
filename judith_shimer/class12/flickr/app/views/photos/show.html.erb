@@ -1,0 +1,7 @@
+<p class="button"><%= link_to "back to all photos", photos_path %></p>
+<div class="photo">
+		<img src="<%= @photo.url %>">
+		<p><%= @photo.caption %></p>
+	</div>
+<p class="button"><%= link_to "edit", edit_photo_path %></p>
+<p class="button"><%= link_to "delete", @photo, method: :delete, data: { confirm: "Are you sure?"} %></p>
