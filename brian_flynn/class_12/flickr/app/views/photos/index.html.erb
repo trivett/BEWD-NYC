@@ -1,0 +1,14 @@
+<% @photos.each do |photos| %>
+
+  <section id="A<%= photos.id %>">
+    <h2><%= link_to photos.caption, photos %></h2>
+    <img src="<%= photos.url %>" alt="cat picture">
+    <br>
+    <p>Photo posted by: <%= link_to photos.user.name, user_path(photos.user) %></p>
+    <hr>
+  </section>
+
+
+
+
+<% end %>

@@ -1,0 +1,625 @@
+<section>
+  <div class="slide-grid">
+    <div class="col-centered">
+      <p>In this slideshow, we’re going to dive a little deeper into Excel and explore basic formatting and formulas. We'll also introduce cell referencing.</p>
+      <p>Again, if you're already comfortable with these topics, feel free to skip ahead. If you're newer to these parts of Excel or if you'd like some review, please continue.</p>
+      <p class="fragment">Note: the tools we’ll use in this slideshow should all be on the home tab of the ribbon; however, it’s possible they’ll be located elsewhere depending on your version of Excel. If you have trouble finding a tool, let us know.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Here we have a spreadsheet with some basic sample data:</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2665/dac_u0s2_01_sample_data.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>We have a title, “Sales.” </p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2666/dac_u0s2_02_sales.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>A column called “Dates” that’s broken down into twelve months.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2667/dac_u0s2_03_dates.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>A column called “Number of Sales” that tracks the amount of sales made each month.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2668/dac_u0s2_04_number.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>A column called “Total Sales Revenue” that shows the total amount of money made from those sales each month.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2669/dac_u0s2_05_revenue.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>And a column called “Average Sales” that will show the average value of each sale by month.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2670/dac_u0s2_06_average.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Let’s use some stylistic formatting to make our data a little more presentable.</p>
+      <p class="fragment">First, we’ll have our title’s cell stretch across all of our data by selecting the columns we want to stretch over and clicking the <strong>merge</strong> button.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2672/dac_u0s2_07_merge1.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>As we merge these four cells, our title is automatically centered above the rest of our content.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2673/dac_u0s2_07_merge2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Next, we’ll use the font formatting options to make our title large, bold, and underlined.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2674/dac_u0s2_07_formatting.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Then, we’ll use the alignment tools to our "Dates" column title match the right alignment of the others.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2675/dac_u0s2_08_right_align.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>And we’ll use the format tool again to make all of our column titles bold.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2676/dac_u0s2_09_bold.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Now, let’s format our numbers a little.</p>
+      <p class="fragment">Since the numbers in the "Total Sales Revenue" column are mostly over a thousand, let’s add a comma to make it a little easier to read them.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2677/dac_u0s2_10_comma.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>And, since these numbers are supposed to reflect monetary amounts, let’s change their formatting to <strong>currency</strong>.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2678/dac_u0s2_11_currency.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Finally, let’s say our sales data doesn’t need to be accurate to the penny.</p>
+      <p>We can remove our decimal points to make our revenue amounts easier to read.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2713/dac_u0s2_12_decimal.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>As we finish our formatting, let's take a look at the formula bar.</p>
+      <p>Notice how the formula bar still contains the raw data&thinsp;&mdash;&thinsp;no commas or dollar signs.</p>
+      <p>The formatting changes we’ve made are just cosmetic.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2679/dac_u0s2_13_raw.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>With everything nicely formatted, it’s time to fill out our “Average Sales” column.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2680/dac_u0s2_14_find_average.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-centered">
+      <p>To calculate the average monthly sales, we’ll need to divide each month’s revenue by the number of sales.</p>
+      <p>You can have Excel automatically do the math for you by using a <strong>formula</strong>.</p>
+      <p>An Excel formula is an equation that is entered into a cell.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>To create a formula in Excel, you must always begin with an equals sign.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2681/dac_u0s2_15_formula1.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Then, you can enter the equation you’d like Excel to solve.</p>
+      <p>In this case, it would be the January revenue of $4,543 divided by the 81 items sold that month.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2682/dac_u0s2_15_formula2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>However, there’s a better way.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2682/dac_u0s2_15_formula2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Instead of manually typing in the values needed for this equation, we can <strong>reference</strong> the cells that already contain those values by entering their coordinates.</p>
+      <p>In this case, we’ll reference <strong>C4</strong> and <strong>B4</strong>.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2683/dac_u0s2_15_formula4.png" alt="excel screenshot" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>And we have our answer: the average revenue per sale in January was $56.</p>
+      <p class="fragment">Notice once again that the raw data in the formula bar shows the formula, while the cell simply shows the output value.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2684/dac_u0s2_15_formula5.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Let's use the decimal tool to make our answer match the zero decimal format of our revenue column.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2685/dac_u0s2_15_formula6.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>To find the average of the next row, we could follow the same process.</p>
+      <p>However, once again, Excel provides a more efficient solution.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2686/dac_u0s2_16_formula_copy1.png">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>If you select the completed average sales cell and drag down to the next cell, you can copy the formula.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2687/dac_u0s2_16_formula_copy2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>If you look at the formula bar, you’ll notice it says <strong>=C5/B5</strong> instead of <strong>=C4/B4</strong>.</p>
+      <p>By default, Excel automatically adjusts cell references relative to their position&thinsp;&mdash;&thinsp;we'll expound this idea later, so just take notice for now.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2689/dac_u0s2_16_formula_copy3.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>To copy this formula to the rest of the "Average Sales" column, you can click and drag again, or you can just double click on the little box at the bottom right corner of the selection.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2690/dac_u0s2_16_formula_copy4.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>By creating a formula and using cell referencing, we were able to instantly calculate the average sales for each month.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2691/dac_u0s2_16_formula_copy5.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-centered">
+      <p>By using formatting, we can facilitate how our data looks so it's more approachable.</p>
+      <p>With formulas and cell referencing, we can manipulate our data quickly and accurately.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Splitting slideshow here -->
+
+
+
+
+
+
+<section>
+  <div class="slide-grid">
+    <div class="col-centered">
+      <p>Let's continue with our example from the previous activity and build our Excel knowledge further.</p>
+      <p>In this slideshow, we'll explore functions in Excel and the difference between absolute and relative cell referencing.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>First, let’s use a formula to discover the total number of sales for the year.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2692/dac_u0s2_17_function1.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>We could add each cell together one by one; however, once again, there’s a better way.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2693/dac_u0s2_17_function2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Instead of manually adding each cell, we’ll use a <strong>function</strong>.</p>
+      <p>Excel functions are formulas that are built into the software; we'll teach you several of the most useful functions later in this course.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2693/dac_u0s2_17_function2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>In this case, since we need the total sum of a range of numbers, we’ll use the <strong>SUM</strong> function.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2694/dac_u0s2_17_function3.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Functions in Excel must always be followed by parenthesis, where you’ll enter the values to which you want the function to apply.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2695/dac_u0s2_17_function4.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Instead of entering each value individually, you can just click and drag to select the whole range.</p>
+      <p>Ranges in Excel are expressed by entering the first value, followed by a colon, then the final value.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2696/dac_u0s2_17_function5.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Once again, if you compare the cell to the formula bar, you can see that the formula bar still contains the raw data that you entered&thinsp;&mdash;&thinsp;<strong>=SUM(B4:B15)</strong>&thinsp;&mdash;&thinsp;while the cell presents the resulting value&thinsp;&mdash;&thinsp;616 items sold.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2699/dac_u0s2_17_function6.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>We can click and drag this function to instantly calculate the sum of the total sales revenue for the year.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2700/dac_u0s2_17_function8.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>Next, let’s add a new column so we can do some additional calculations.</p>
+      <p>To do so, just right-click a column and select “Insert.”</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2701/dac_u0s2_18_insert_column1.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>New columns will always insert to the left of the selected column.</p>
+      <p>New rows will always insert above the selected row.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2702/dac_u0s2_18_insert_column2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>We’ll name our new column “Percent of Annual Sales.”</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2703/dac_u0s2_18_insert_column3.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>We can click and drag the column head to widen the column and better fit our title.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2704/dac_u0s2_18_insert_column4.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>For each row in this column, we’ll calculate the percent of annual revenue collected.</p>
+      <p>We can do so by dividing the total revenue for the month divided by the total revenue for the year.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2705/dac_u0s2_19_percent1.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>The answer doesn’t look right, does it?</p>
+      <p>That’s because when we inserted the column, it held the currency formatting from the Average Sales column.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2706/dac_u0s2_19_percent2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>We need to switch the formatting from “currency” to “percentage.”</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2706/dac_u0s2_19_percent2.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>That looks better!</p>
+      <p>January accounted for 8% of the annual revenue.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2707/dac_u0s2_19_percent3.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>However, if we click and drag our formula to apply it to the rest of the column, we’re left with a bunch of errors.</p>
+      <p>What happened?</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2708/dac_u0s2_19_percent5.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>If you take a look at the first error, you might notice something funny in the formula bar: it says <strong>=C5/C17</strong>&thinsp;&mdash;&thinsp;the second coordinate refers to an empty cell.</p>
+      <p>This incorrect pattern continues for each row in the column.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2709/dac_u0s2_19_percent6.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-centered">
+      <p>The type of cell referencing we’ve been doing so far is known as <strong>relative cell referencing</strong>. This is the default in Excel.</p>
+      <p>Relative cell references change based on the relative position of rows and columns.</p>
+      <p>For example, if you copy the formula <strong>=A1+B1</strong> from row 1 to row 2, the formula will become <strong>=A2+B2</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-centered">
+      <p>If you want a cell reference to remain constant, you have to use <strong>absolute cell referencing</strong>.</p>
+      <p>To signify this, you have to place a dollar sign before each coordinate that you would like to stay the same.</p>
+      <p>For example, if you copy the formula <strong>=$A$1+$B$1</strong> from row 1 to row 2, the formula will remain <strong>=$A$1+$B$1</strong>.</p>
+      <p class="fragment">Let’s try this with our sample data.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>In this case, we want our first reference&thinsp;&mdash;&thinsp;the monthly revenue&thinsp;&mdash;&thinsp;to remain relative, but our second reference&thinsp;&mdash;&thinsp;the total annual revenue&thinsp;&mdash;&thinsp;to be absolute, so we’ll type <strong>=C4/$C$16</strong>.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2710/dac_u0s2_19_percent7.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>If we apply this new formula to the rest of the column, it works perfectly.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2711/dac_u0s2_19_percent8.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-small">
+      <p>And if we compare the data in the second row of this column to the formula bar, we can see that our first reference has changed appropriately and the second has remained constant: <<strong>=C5/$C$16</strong>.</p>
+    </div>
+    <div class="col-large">
+      <img src="http://circuits-assets.generalassemb.ly/prod/asset/2712/dac_u0s2_19_percent9.png" alt="excel screenshot">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="slide-grid">
+    <div class="col-centered">
+      <p>With formatting, formulas, functions, and cell referencing, Excel can make all kinds of calculations quick and easy, as well as reduce the chance for human error.</p>
+      <p>We hope these tricks help you complete work faster and better.</p>
+    </div>
+  </div>
+</section>

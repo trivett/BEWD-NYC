@@ -1,0 +1,5 @@
+<h2><%= @product.name %></h2>
+
+<p>Price: <%= @product.price %></p><br>
+
+<p id="delete"><%= link_to "DELETE", @company, method: :delete, data: {confirm: "are you sure?"} %></p>

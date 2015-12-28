@@ -1,0 +1,42 @@
+Proposal:
+
+I want to create a website called Doggerel Blog:
+
+---------------
+
+Definition:
+
+dog·ger·el
+ˈdôɡərəl/
+noun: verse or words that are badly written or expressed.
+
+
+Origin:
+
+late Middle English (as an adjective describing such verse): apparently from dog (used contemptuously, as in dog Latin) + -rel.
+
+-rel
+suffix
+forming nouns with diminutive or derogatory force such as cockerel, pickerel, scoundrel.
+
+---------------
+
+Basically, it's a website to create and share bad poetry and other crap art.
+
+My target audience would be anyone who likes art and poetry but dislikes the pretentious pressure that normally comes along with its creation and enjoyment. I want it to be very easy to use and navigate to make it as open, inclusive, and accessible as possible.
+
+The site should function as follows:
+1) Anyone who visits the site should be able to scroll through the poetry and art currently hosted on the site. They should be able to search content by author, title, and date. They should also be able to filter content by date.
+
+2) Anyone visiting the site should be able to create an account that they can log into in the future. Their account will be connected to a profile that will show works they've created.
+
+3) Users who create an account should be able to add new poems or images through forms on the site. They should be able to delete old content they they no longer want showcased. They should be able to follow other users who they like. They should be able to upvote, downvote, and comment on other users' content.
+
+----------------
+
+APIs:
+
+I don't know what APIs would be helpful. Perhaps something for creating and managing user accounts and profiles? Perhaps a rhyming dictionary? Perhaps a simple drawing tool or image uploader?
+
+----------------
+

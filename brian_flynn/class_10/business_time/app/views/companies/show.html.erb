@@ -1,0 +1,5 @@
+<h3>Company: <%= @company.name.capitalize %></h3>
+<p>City: <%= @company.city %></p>
+<p>Market Capitalization: <%= @company.market_capitalization %></p><br>
+
+<%= link_to "DELETE", @company, method: :delete, data: {confirm: "are you sure?"} %>

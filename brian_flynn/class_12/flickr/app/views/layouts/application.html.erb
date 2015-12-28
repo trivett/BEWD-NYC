@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flickr</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<br>
+<p id="new_photo"><%= link_to "Create New Photo",
+new_photo_path %></p>
+<br>
+<hr>
+
+<%= yield %>
+
+</body>
+</html>

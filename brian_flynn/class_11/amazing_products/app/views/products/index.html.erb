@@ -1,0 +1,12 @@
+<% @products.each do |product| %>
+
+<p><strong>Product:</strong> <%= link_to product.name.capitalize, product %></p>
+<p><strong>Cost:</strong> $<%= product.price %></p><br>
+
+
+<% end %>
+
+<p id="new_product"><%= link_to "New Product",
+new_product_path %></p>
+
+

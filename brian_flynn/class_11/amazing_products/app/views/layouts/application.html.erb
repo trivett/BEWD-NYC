@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AmazingProducts</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style type="text/css" media="screen">
+    #new_product a{
+      padding: 10px;
+      background: blue;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-weight: bold;
+      border: 2px solid black;
+    }
+
+    #new_product a:hover {
+      background: royalblue;
+    }
+
+    a {
+      color: black;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      text-decoration: underline;
+    }
+
+    #flash h2 {
+      color: red;
+    }
+
+    #title {
+      color: black;
+    }
+
+    #delete a {
+      text-decoration: none;
+      font-family: sans-serif;
+      color: white;
+      padding: 10px;
+      background: red;
+      font-weight: bold;
+      border: 2px solid black;
+      border-radius: 8px;
+      transition: transform .5s;
+    }
+
+    #delete a:hover {
+      background: deeppink;
+    }
+
+  </style>
+</head>
+<body>
+
+<h1 id="title"><a href="http://localhost:3000/products">Product Management Tool</a></h1>
+
+<h2 id="flash"><%= flash[:notice] %></h2>
+<%= yield %>
+
+</body>
+</html>

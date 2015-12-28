@@ -1,0 +1,7 @@
+<% @companies.each do |company| %>
+
+  <h3><%= company.id %>. Company: <%= company.name.capitalize %></h3>
+  <p>City: <%= company.city %></p>
+  <p>Market Capitalization: <%= company.market_capitalization %></p><br>
+
+<% end %>
