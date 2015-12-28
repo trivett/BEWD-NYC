@@ -1,0 +1,8 @@
+<h2>Instructor: <%= @instructor.name %></h2>
+
+<br /><br />
+<%= link_to 'Edit Instructor', edit_course_instructor_path(@course,@instructor) %>
+
+<br /><br />
+<%= link_to "Delete Instructor", [@course,@instructor], method: :delete, data: {confirm: "are you sure?"} %>
+

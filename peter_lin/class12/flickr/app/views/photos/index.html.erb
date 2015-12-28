@@ -1,0 +1,8 @@
+<% @photos.each do |photo| %>
+
+  <img src="<%= photo.url %>">
+  <p> <%= link_to photo.caption, photo %> </p>
+
+<% end %>
+
+
