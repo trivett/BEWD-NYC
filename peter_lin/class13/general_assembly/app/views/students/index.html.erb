@@ -1,6 +1,6 @@
 <h1><%= @course.name.capitalize %></h1>
 <% if !@course.instructor.nil? %>
-  <h2>Instructor: <%= @course.instructor.name %></h2>
+  <h2>Instructor: <%= link_to @course.instructor.name, course_instructor_path(@course, @course.instructor) %></h2>
 <% else %>
   <h3>No Instructors</h3>
 <% end %>
@@ -14,6 +14,11 @@
 
 
 <%= link_to "New Student", new_course_student_path  %>
+
+<br /><br />
+<% if @course.instructor.nil? %>
+  <%= link_to "New Instructor", new_course_instructor_path %>
+<% end %>
 
 
 
