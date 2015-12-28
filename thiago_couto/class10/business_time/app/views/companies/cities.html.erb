@@ -1,0 +1,7 @@
+<h2>Listing Companies by City</h2>
+<p>Companies in <%= params[:city] %></p>
+<ul>
+<% @companies.each do |c| %>
+ <li><%= c.id %>, <%= c.name %>, <%= c.city %></li>
+<% end %>
+</ul>

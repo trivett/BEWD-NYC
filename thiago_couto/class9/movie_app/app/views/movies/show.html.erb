@@ -1,0 +1,5 @@
+<h2><%= @movie.description %></h2>
+<p><%= @movie.title %> was released on <%= @movie.release %>.</p>
+
+<%= link_to "Index", movies_path %>
+<%= link_to "Delete", @movie, :method => :delete, data: {confirm: 'Are you sure?'} %>

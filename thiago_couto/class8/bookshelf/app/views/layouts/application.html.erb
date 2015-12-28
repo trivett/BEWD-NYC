@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Bookshelf</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<h1>Bookshelf</h1>
+		<%= yield %>
+		<div class='footer'>Copyleft 2015</div>
+	</body>
+</html>

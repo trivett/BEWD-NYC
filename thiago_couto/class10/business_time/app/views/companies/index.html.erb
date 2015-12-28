@@ -1,0 +1,6 @@
+<h2>Listing Companies by ID</h2>
+<ul>
+<% @companies.each do |c| %>
+ <li><%= c.id %>, <%= link_to c.name, company %>, <%= c.city %></li>
+<% end %>
+</ul>

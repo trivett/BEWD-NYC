@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Hellos World</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<h1>Hellos, World!
+		<%= yield %>
+		<div class='footer'><p>&copy; Copyright 2015</p></div>
+	</body>
+</html>
