@@ -26,6 +26,22 @@ class CoursesController < ApplicationController
     redirect_to courses_path
   end
 
+  def edit
+    @course = Course.find(params[:id])
+  end
+
+  def update
+    @course = Course.find(params[:id])
+    if @course.update(course_params)
+      flash[:notice] = "Course Updated"
+      redirect_to courses_path
+    else
+      flash[:notice] = "Course Update Failed"
+      redirect_to edit_course_path
+    end
+  end
+
+
   private
 
   def course_params
