@@ -1,0 +1,7 @@
+<h2><%= @user.name %>'s posts!</h2>
+
+<ul>
+<% @posts.each do |post| %>
+  <li><%= link_to post.title, user_post_path(@user, post) %></li>
+<% end %>
+</ul>
