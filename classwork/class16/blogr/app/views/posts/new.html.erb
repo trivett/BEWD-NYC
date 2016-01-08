@@ -1,0 +1,9 @@
+<h1>New post by you, <%= current_user.name %></h1>
+
+<div>
+  <%= form_for [current_user, @post] do |f| %>
+    <p>Title: <%= f.text_field :title %></p>
+    <p>Body: <%= f.text_area :body %></p>
+    <p><%= f.submit "Post!", class: "btn btn-primary btn-md" %></p>
+  <% end %>
+</div>
