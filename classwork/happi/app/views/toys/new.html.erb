@@ -1,0 +1,5 @@
+<%= form_for [@animal, @toy] do |f| %>
+  <p>Name: <%=f.text_field :name %></p>
+  <p>Photo: <%=f.text_field :photo %></p>
+  <p><%= f.submit %></p>
+<% end %>

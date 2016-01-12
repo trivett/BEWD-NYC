@@ -1,0 +1,18 @@
+<% if @client.errors.any? %>
+  <div id="error_explanation">
+    <p><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</p>
+ 
+    <ul>
+    <% @client.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<h2>Add a new client to <%= @shelter.name %> </h2>
+<%= form_for [@shelter, @client] do |f| %>
+  <p>Name: <%= f.text_field :name%></p>
+  <p>Age: <%= f.text_field :age%></p>
+  <p>Photo: <%= f.text_field :photo%></p>
+  <p><%= f.submit %></p>
+<% end %>

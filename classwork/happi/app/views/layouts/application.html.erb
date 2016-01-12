@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happi</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class='container'>
+  <div>
+    <%# if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<%# end %>
+<%# if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<%# end %>
+  </div>
+  <nav>
+    <span><%= link_to "All Shelters", shelters_path %></span>
+  </nav>
+
+  <%= yield %>
+  
+</div><!-- /container  -->
+</body>
+</html>

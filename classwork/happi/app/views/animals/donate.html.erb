@@ -1,0 +1,17 @@
+<% if @animal.errors.any? %>
+  <div id="error_explanation">
+    <p><%= pluralize(@animal.errors.count, "error") %> prohibited this animal from being saved:</p>
+ 
+    <ul>
+    <% @animal.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<h2>Adopt <%= @animal.name %> </h2>
+
+<%= form_for([@shelter, @animal], url: { action: 'complete_donation' }, html: { method: 'put' }) do |f| %>
+  <p>Shelter to accept <%= @animal.name %>: <%= f.collection_select(:shelter, Shelter.all, :id, :name)  %></p>
+  <p><%= f.submit %></p>
+<% end %>

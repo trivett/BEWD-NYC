@@ -1,0 +1,9 @@
+<h1>Clients</h1>
+
+<ul>
+
+<% @clients.each do |client| %>
+  <li><%= link_to client.name, shelter_client_path(@shelter, client) %></li>
+<% end %>
+
+</ul>

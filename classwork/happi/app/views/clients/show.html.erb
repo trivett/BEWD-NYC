@@ -1,0 +1,16 @@
+<h1><%= @client.name %></h1>
+<img src="<%= @client.photo %>" height='400'>
+<h2>Shelter: <%= link_to @client.shelter.name, shelter_path(@client.shelter) %></h2>
+<h2><%= @client.name %>'s animals:</h2>
+<ul>
+  <% @client.animals.each do |animal| %>
+    <li><%= link_to animal.name, animal_path(animal) %></li>
+  <% end %>
+</ul>
+
+<h2>Toys in <%= @client.name %>'s house</h2>
+<ul>
+  <% @client.toys.each do |toy| %>
+    <li><%= link_to toy.name, animal_toy_path(toy.animal, toy) %></li>
+  <% end %>
+</ul>

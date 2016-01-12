@@ -1,0 +1,19 @@
+<% if @animal.errors.any? %>
+  <div id="error_explanation">
+    <p><%= pluralize(@animal.errors.count, "error") %> prohibited this animal from being saved:</p>
+ 
+    <ul>
+    <% @animal.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<h2>Add a new animal to <%= @shelter.name %> </h2>
+
+<%= form_for [@shelter, @animal] do |f| %>
+  <p>Name: <%= f.text_field :name%></p>
+  <p>Species: <%= f.text_field :species%></p>
+  <p>Photo: <%= f.text_field :photo%></p>
+  <p><%= f.submit %></p>
+<% end %>

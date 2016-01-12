@@ -1,0 +1,5 @@
+<h1><%= @toy.name %></h1>
+
+<p>Owner: <%= link_to @toy.animal.name, animal_path(@toy.animal) %></p>
+
+<img src="<%= @toy.photo %>" height="400px">

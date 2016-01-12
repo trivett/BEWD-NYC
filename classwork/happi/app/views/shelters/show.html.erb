@@ -1,0 +1,19 @@
+<h1><%= @shelter.name %></h1>
+
+<p><%= link_to "Add an animal", new_shelter_animal_path(@shelter) %> | <%= link_to "Add a client", new_shelter_client_path(@shelter) %></p>
+
+<h2>Our animals</h2>
+<ul>
+  <% @animals.each do |animal| %>
+    <li><%= link_to animal.name, shelter_animal_path(@shelter, animal) %></li>
+  <% end %>
+</ul>
+
+<p><%= link_to "New Client for #{@shelter.name }", new_shelter_client_path(@shelter) %></p>
+<h2>Our clients</h2>
+<ul>
+  <% @clients.each do |client| %>
+    <li><%= link_to client.name, shelter_client_path(@shelter, client) %></li>
+  <% end %>
+</ul>
+
