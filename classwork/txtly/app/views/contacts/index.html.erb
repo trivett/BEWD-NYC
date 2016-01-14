@@ -1,0 +1,17 @@
+<h2>Txtly</h2>
+
+<p><%= link_to "add new contact", new_contact_path %></p>
+
+<div class="contact-list">
+  
+  <% @contacts.each do |contact| %>
+    <p><%= contact.name %></p>
+    <%= form_tag contact_messages_path(contact), method: :post do %>
+      <%= text_area_tag :body, "", cols: 40, rows: 5, placeholder: "Enter a message for #{ contact.name }" %>
+      <br />
+      <%= submit_tag "send" %>
+    <% end %>
+  <% end %>
+
+
+</div>

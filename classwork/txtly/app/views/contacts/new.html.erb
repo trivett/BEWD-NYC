@@ -1,0 +1,10 @@
+
+<h3>New contact!</h3>
+<div class='form'>
+  <%= form_for @contact do |f| %>
+    <p>Name: <%= f.text_field :name %></p>
+    <p>Phone: <%= f.text_field :phone %></p>
+    <p><%= submit_tag "Add contact" %></p>
+  <% end %>
+
+</div>
